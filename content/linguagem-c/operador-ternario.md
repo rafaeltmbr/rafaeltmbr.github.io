@@ -1,0 +1,2 @@
+# Linguagem C
+## Operador ternário
