@@ -47,21 +47,29 @@ function changeBodyTheme({target: node}, themeClass) {
 }
 
 function selectThemeNode(node) {
-    if (selectThemeNode.currentNode)
-        selectThemeNode.currentNode.className = '';
-    if (node)
-        node.className = 'selected';
+    if (selectThemeNode.currentNode) selectThemeNode.currentNode.className = '';
+        
+    if (node) node.className = 'selected';
+
     selectThemeNode.currentNode = node;
 }
 
 function switchPage({target: node}, page) {
-    if (switchPage.currentNode)
-        switchPage.currentNode.className = '';
-    if (node)
-        node.className = 'selected';
+    if (!page) return;
+
+    if (switchPage.currentNode) switchPage.currentNode.className = '';
+
+    if (node) node.className = 'selected';
+
     switchPage.currentNode = node;
     
-    changePageContent('https://raw.githubusercontent.com/rafaeltmbr/rafaeltmbr.github.io/master/content/' + page);
+    const url = (
+        page.charAt(0) != '/'
+        ? page :
+        'https://raw.githubusercontent.com/rafaeltmbr/rafaeltmbr.github.io/master/content/' + page
+    );
+
+    changePageContent(url);
 }
 
 function changePageContent(contentAddress) {
@@ -88,6 +96,5 @@ window.addEventListener('load', () => {
 
     let node = (themeNodeId ? document.getElementById(themeNodeId) : null);
     
-    if (themeClass && node)
-        changeBodyTheme({target: node}, themeClass);
+    if (themeClass && node) changeBodyTheme({target: node}, themeClass);
 });
