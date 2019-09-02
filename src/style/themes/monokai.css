@@ -1,0 +1,45 @@
+.monokai .menu-icons {
+    background-color: rgb(39, 40, 34);
+}
+
+.monokai .menu-button svg {
+    fill: #fff;
+}
+
+.monokai .menu-content {
+    background: rgb(30, 31, 28);
+    box-shadow: 0 0 3px rgb(30, 31, 28);
+}
+
+.monokai .menu-content > header {
+    background: rgb(39, 40, 34);
+    color: rgb(204, 204, 204);
+}
+
+.monokai .menu-category-list > li > header {
+    color: rgb(204, 204, 204);
+}
+
+.monokai .menu-category > li {
+    color: rgb(204, 204, 204);
+}
+
+.monokai .menu-category li:hover {
+    background: rgb(62, 61, 50);
+}
+
+.monokai .menu-category .selected {
+    background: rgb(65, 67, 57);
+}
+
+.monokai .menu-category-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.monokai .menu-category-list::-webkit-scrollbar-thumb {
+    background: rgb(71, 72, 68);
+}
+
+.monokai .menu-category-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(82, 82, 80);
+}

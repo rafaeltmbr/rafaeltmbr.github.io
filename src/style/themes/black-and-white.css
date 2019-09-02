@@ -1,0 +1,45 @@
+.black-and-white .menu-icons {
+    background-color: #fff;
+}
+
+.black-and-white .menu-button svg {
+    fill: #000;
+}
+
+.black-and-white .menu-content {
+    background: #fff;
+    box-shadow: 0 0 1px #000;
+}
+
+.black-and-white .menu-content > header {
+    background: #222;
+    color: #fff;
+}
+
+.black-and-white .menu-category-list > li > header {
+    color: #000;
+}
+
+.black-and-white .menu-category > li {
+    color: #000;
+}
+
+.black-and-white .menu-category li:hover {
+    background: #ccc;
+}
+
+.black-and-white .menu-category .selected {
+    background: #999;
+}
+
+.black-and-white .menu-category-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.black-and-white .menu-category-list::-webkit-scrollbar-thumb {
+    background: #ddd;
+}
+
+.black-and-white .menu-category-list::-webkit-scrollbar-thumb:hover {
+    background: #bababa;
+}

@@ -1,0 +1,45 @@
+.red .menu-icons {
+    background-color: rgb(88, 0, 0);
+}
+
+.red .menu-button svg {
+    fill: #fff;
+}
+
+.red .menu-content {
+    background: rgb(51, 0, 0);
+    box-shadow: 0 0 3px rgb(51, 0, 0);
+}
+
+.red .menu-content > header {
+    background: rgb(67, 26, 26);
+    color: rgb(204, 204, 204);
+}
+
+.red .menu-category-list > li > header {
+    color: rgb(204, 204, 204);
+}
+
+.red .menu-category > li {
+    color: rgb(204, 204, 204);
+}
+
+.red .menu-category li:hover {
+    background: rgb(128, 0, 0);
+}
+
+.red .menu-category .selected {
+    background: rgb(119, 0, 0);
+}
+
+.red .menu-category-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.red .menu-category-list::-webkit-scrollbar-thumb {
+    background: rgb(79, 48, 48);
+}
+
+.red .menu-category-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 70, 70);
+}

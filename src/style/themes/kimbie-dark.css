@@ -1,0 +1,45 @@
+.kimbie-dark .menu-icons {
+    background-color: rgb(34, 26, 15);
+}
+
+.kimbie-dark .menu-button svg {
+    fill: rgb(190, 157, 119);
+}
+
+.kimbie-dark .menu-content {
+    background: rgb(54, 39, 18);
+    box-shadow: 0 0 3px rgb(54, 39, 18);
+}
+
+.kimbie-dark .menu-content > header {
+    background: rgb(69, 57, 40);
+    color: rgb(204, 204, 204);
+}
+
+.kimbie-dark .menu-category-list > li > header {
+    color: rgb(204, 204, 204);
+}
+
+.kimbie-dark .menu-category > li {
+    color: rgb(204, 204, 204);
+}
+
+.kimbie-dark .menu-category li:hover {
+    background: rgb(81, 55, 24);
+}
+
+.kimbie-dark .menu-category .selected {
+    background: rgb(100, 83, 66);
+}
+
+.kimbie-dark .menu-category-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.kimbie-dark .menu-category-list::-webkit-scrollbar-thumb {
+    background: rgb(81, 71, 59);
+}
+
+.kimbie-dark .menu-category-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(86, 82, 75);
+}

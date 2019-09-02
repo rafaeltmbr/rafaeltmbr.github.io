@@ -1,0 +1,10 @@
+.content-area {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+    padding: 20px 30px;
+}
+
+img {
+    max-width: calc(100% - 70px);
+}

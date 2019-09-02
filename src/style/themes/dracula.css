@@ -1,0 +1,45 @@
+.dracula .menu-icons {
+    background-color: rgb(52, 55, 70);
+}
+
+.dracula .menu-button svg {
+    fill: rgb(150, 170, 220);
+}
+
+.dracula .menu-content {
+    background: rgb(33, 34, 44);
+    box-shadow: 0 0 3px rgb(33, 34, 44);
+}
+
+.dracula .menu-content > header {
+    background: rgb(40, 42, 54);
+    color: rgb(248, 248, 242);
+}
+
+.dracula .menu-category-list > li > header {
+    color: rgb(248, 248, 242);
+}
+
+.dracula .menu-category > li {
+    color: rgb(248, 248, 242);
+}
+
+.dracula .menu-category li:hover {
+    background: rgb(49, 50, 65);
+}
+
+.dracula .menu-category .selected {
+    background: rgb(49, 50, 65);
+}
+
+.dracula .menu-category-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.dracula .menu-category-list::-webkit-scrollbar-thumb {
+    background: rgb(72, 73, 80);
+}
+
+.dracula .menu-category-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(82, 83, 86);
+}

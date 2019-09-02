@@ -1,0 +1,45 @@
+.solarized-light .menu-icons {
+    background-color: rgb(221, 214, 193);
+}
+
+.solarized-light .menu-button svg {
+    fill: rgb(88, 76, 39);
+}
+
+.solarized-light .menu-content {
+    background: rgb(238, 232, 213);
+    box-shadow: 0 0 1px rgb(88, 76, 39);
+}
+
+.solarized-light .menu-content > header {
+    background: rgb(217, 212, 197);
+    color: rgb(104, 104, 103);
+}
+
+.solarized-light .menu-category-list > li > header {
+    color: rgb(104, 104, 103);
+}
+
+.solarized-light .menu-category > li {
+    color: rgb(104, 104, 103);
+}
+
+.solarized-light .menu-category li:hover {
+    background: rgb(234, 224, 193);
+}
+
+.solarized-light .menu-category .selected {
+    background: rgb(209, 203, 184);
+}
+
+.solarized-light .menu-category-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.solarized-light .menu-category-list::-webkit-scrollbar-thumb {
+    background: rgb(183, 179, 168);
+}
+
+.solarized-light .menu-category-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(141, 139, 133);
+}

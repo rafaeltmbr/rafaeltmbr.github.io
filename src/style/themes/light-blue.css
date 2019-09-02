@@ -1,0 +1,45 @@
+.light-blue .menu-icons {
+    background-color: #404070;
+}
+
+.light-blue .menu-button svg {
+    fill: #fff;
+}
+
+.light-blue .menu-content {
+    background: #cce;
+    box-shadow: 0 0 3px #117;
+}
+
+.light-blue .menu-content > header {
+    background: #505080;
+    color: #fff;
+}
+
+.light-blue .menu-category-list > li > header {
+    color: #224;
+}
+
+.light-blue .menu-category > li {
+    color: #224;
+}
+
+.light-blue .menu-category li:hover {
+    background: #aac;
+}
+
+.light-blue .menu-category .selected {
+    background: #bbd;
+}
+
+.light-blue .menu-category-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.light-blue .menu-category-list::-webkit-scrollbar-thumb {
+    background: #aac;
+}
+
+.light-blue .menu-category-list::-webkit-scrollbar-thumb:hover {
+    background: #77a;
+}

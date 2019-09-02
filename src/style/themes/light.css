@@ -1,0 +1,45 @@
+.light .menu-icons {
+    background-color: rgb(44, 44, 44);
+}
+
+.light .menu-button svg {
+    fill: #fff;
+}
+
+.light .menu-content {
+    background: rgb(243, 243, 243);
+    box-shadow: 0 0 3px #444;
+}
+
+.light .menu-content > header {
+    background: rgb(221, 221, 221);
+    color: rgb(97, 97, 97);
+}
+
+.light .menu-category-list > li > header {
+    color: rgb(97, 97, 97);
+}
+
+.light .menu-category > li {
+    color: rgb(97, 97, 97);
+}
+
+.light .menu-category li:hover {
+    background: rgb(232, 232, 232);
+}
+
+.light .menu-category .selected {
+    background: rgb(228, 230, 241);
+}
+
+.light .menu-category-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.light .menu-category-list::-webkit-scrollbar-thumb {
+    background: rgb(186, 186, 186);
+}
+
+.light .menu-category-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(142, 142, 142);
+}

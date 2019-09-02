@@ -1,0 +1,45 @@
+.monokai-dimmed .menu-icons {
+    background-color: rgb(53, 53, 53);
+}
+
+.monokai-dimmed .menu-button svg {
+    fill: #fff;
+}
+
+.monokai-dimmed .menu-content {
+    background: rgb(39, 39, 39);
+    box-shadow: 0 0 3px rgb(39, 39, 39);
+}
+
+.monokai-dimmed .menu-content > header {
+    background: rgb(80, 80, 80);
+    color: rgb(204, 204, 204);
+}
+
+.monokai-dimmed .menu-category-list > li > header {
+    color: rgb(204, 204, 204);
+}
+
+.monokai-dimmed .menu-category > li {
+    color: rgb(204, 204, 204);
+}
+
+.monokai-dimmed .menu-category li:hover {
+    background: rgb(68, 68, 68);
+}
+
+.monokai-dimmed .menu-category .selected {
+    background: rgb(78, 78, 78);
+}
+
+.monokai-dimmed .menu-category-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.monokai-dimmed .menu-category-list::-webkit-scrollbar-thumb {
+    background: rgb(66, 66, 66);
+}
+
+.monokai-dimmed .menu-category-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(79, 79, 79);
+}

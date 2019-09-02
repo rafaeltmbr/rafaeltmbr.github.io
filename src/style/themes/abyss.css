@@ -1,0 +1,45 @@
+.abyss .menu-icons {
+    background-color: rgb(5, 19, 54);
+}
+
+.abyss .menu-button svg {
+    fill: #fff;
+}
+
+.abyss .menu-content {
+    background: rgb(6, 6, 33);
+    box-shadow: 0 0 3px rgb(6, 6, 33);
+}
+
+.abyss .menu-content > header {
+    background: rgb(16, 25, 44);
+    color: rgb(204, 204, 204);
+}
+
+.abyss .menu-category-list > li > header {
+    color: rgb(204, 204, 204);
+}
+
+.abyss .menu-category > li {
+    color: rgb(204, 204, 204);
+}
+
+.abyss .menu-category li:hover {
+    background: rgb(6, 25, 64);
+}
+
+.abyss .menu-category .selected {
+    background: rgb(21, 32, 55);
+}
+
+.abyss .menu-category-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.abyss .menu-category-list::-webkit-scrollbar-thumb {
+    background: rgb(72, 73, 80);
+}
+
+.abyss .menu-category-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(82, 83, 86);
+}
