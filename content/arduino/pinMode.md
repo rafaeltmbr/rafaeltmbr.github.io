@@ -1,1 +1,2 @@
-# pinMode
+# Arduino
+## pinMode()
