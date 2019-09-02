@@ -61,7 +61,7 @@ function switchPage({target: node}, page) {
         node.className = 'selected';
     switchPage.currentNode = node;
     
-    changePageContent('https://raw.githubusercontent.com' + page);
+    changePageContent('https://raw.githubusercontent.com/rafaeltmbr/rafaeltmbr.github.io/master/content/' + page);
 }
 
 function changePageContent(contentAddress) {
