@@ -1,7 +1,9 @@
 .menu-content {
-    float: left;
-    width: calc(100% - 60px);
-    max-width: 300px;
+    position: fixed;
+    top: 0;
+    left: 60px;
+    max-width: calc(100% - 60px);
+    width: 300px;
     height: 100%;
 }
 

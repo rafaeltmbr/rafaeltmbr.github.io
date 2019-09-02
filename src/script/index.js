@@ -47,19 +47,24 @@ function changeBodyTheme({target: node}, themeClass) {
 }
 
 function selectThemeNode(node) {
-    if (selectThemeNode.currentNode) selectThemeNode.currentNode.className = '';
+    if (selectThemeNode.currentNode)
+        selectThemeNode.currentNode.className = '';
         
-    if (node) node.className = 'selected';
+    if (node)
+        node.className = 'selected';
 
     selectThemeNode.currentNode = node;
 }
 
 function switchPage({target: node}, page) {
-    if (!page) return;
+    if (!page)
+        return;
 
-    if (switchPage.currentNode) switchPage.currentNode.className = '';
+    if (switchPage.currentNode)
+        switchPage.currentNode.className = '';
 
-    if (node) node.className = 'selected';
+    if (node)
+        node.className = 'selected';
 
     switchPage.currentNode = node;
     
@@ -77,8 +82,11 @@ function changePageContent(contentAddress) {
     let contentArea = document.querySelector('.content-area');
 
     xhttp.onreadystatechange = function() {
-        if (this.readyState == this.DONE && this.status == 200)
+        if (this.readyState == this.DONE && this.status == 200) {
             contentArea.innerHTML = parseMarkdown(this.responseText);
+            hideMenuContent();
+            setOpacityDefault();
+        }
     };
 
     xhttp.open("GET", contentAddress, true);
@@ -96,5 +104,6 @@ window.addEventListener('load', () => {
 
     let node = (themeNodeId ? document.getElementById(themeNodeId) : null);
     
-    if (themeClass && node) changeBodyTheme({target: node}, themeClass);
+    if (themeClass && node)
+        changeBodyTheme({target: node}, themeClass);
 });
