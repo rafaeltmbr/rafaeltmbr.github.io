@@ -1,31 +1,64 @@
 .content-area {
     min-height: 100%;
-    padding: 20px 10px;
-    padding-left: 70px; /* 10px + icon bar width (60px) */
-    max-width: 900px;
+    padding: 20px 40px;
+    max-width: 950px;
     margin: 0 auto;
-    border: 1px solid gray;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 
 .content-area img {
-    max-width: calc(100% - 70px);
+    width: 100%;
 }
 
 .content-area h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-top: 0.7em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ddd;
     font-size: 2.0em;
 }
 
 .content-area h2 {
-    margin: 30px 30px 15px;
+    margin-top: 1em;
+    padding-bottom: 0.2em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #ddd;
 }
 
 .content-area p {
     line-height: 1.6em;
-    margin: 10px 0;
+    margin-top: 1em;
 }
 
 .content-area ul {
-    margin: 10px 20px;
+    margin-top: 1em;
+    margin-left: 2em;
+    line-height: 1.5em;
+}
+
+.content-area ul ul {
+    margin-top: 0;
+}
+
+.content-area li {
+    list-style-type: disc;
+}
+
+.content-area li li {
+    list-style-type: circle;
+}
+
+.content-area li li li {
+    list-style-type: square;
+}
+
+.content-area a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1050px) {
+    .content-area {
+        padding: 20px 20px 20px 80px;
+        border: none;
+    }
 }
