@@ -1,9 +1,9 @@
 .black-and-white .menu-icons {
-    background-color: #fff;
+    background-color: #111;
 }
 
 .black-and-white .menu-button svg {
-    fill: #000;
+    fill: #fff;
 }
 
 .black-and-white .menu-content {
@@ -12,7 +12,7 @@
 }
 
 .black-and-white .menu-content > header {
-    background: #222;
+    background: #111;
     color: #fff;
 }
 
@@ -25,11 +25,11 @@
 }
 
 .black-and-white .menu-category li:hover {
-    background: #ccc;
+    background: #ddd;
 }
 
 .black-and-white .menu-category .selected {
-    background: #999;
+    font-weight: bold;
 }
 
 .black-and-white .menu-category-list::-webkit-scrollbar-track {
@@ -42,4 +42,21 @@
 
 .black-and-white .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: #bababa;
+}
+
+.black-and-white, .black-and-white .content-area, .black-and-white .content-area * {
+    background: #fff;
+    border-color: #ddd;
+}
+
+.black-and-white .content-area {
+    color: #000;
+}
+
+.black-and-white .content-area a {
+    color: rgb(45, 59, 185);
+}
+
+.black-and-white .content-area a:visited {
+    color: rgb(139, 36, 208);
 }

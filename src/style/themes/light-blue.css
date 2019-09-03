@@ -43,3 +43,20 @@
 .light-blue .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: #77a;
 }
+
+.light-blue, .light-blue .content-area, .light-blue .content-area * {
+    background: rgb(219, 219, 248);
+    border-color: rgb(193, 193, 214);
+}
+
+.light-blue .content-area {
+    color: #224;
+}
+
+.light-blue .content-area a {
+    color: rgb(45, 59, 185);
+}
+
+.light-blue .content-area a:visited {
+    color: rgb(139, 36, 208);
+}

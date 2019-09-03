@@ -43,3 +43,20 @@
 .kimbie-dark .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: rgb(86, 82, 75);
 }
+
+.kimbie-dark, .kimbie-dark .content-area, .kimbie-dark .content-area * {
+    background: rgb(44, 33, 18);
+    border-color: rgb(68, 51, 27);
+}
+
+.kimbie-dark .content-area {
+    color: rgb(204, 204, 204);
+}
+
+.kimbie-dark .content-area a {
+    color: rgb(66, 165, 245);
+}
+
+.kimbie-dark .content-area a:visited {
+    color: rgb(139, 36, 208);
+}

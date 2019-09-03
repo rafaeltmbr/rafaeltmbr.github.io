@@ -43,3 +43,20 @@
 .red .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: rgb(85, 70, 70);
 }
+
+.red, .red .content-area, .red .content-area * {
+    background: rgb(57, 0, 0);
+    border-color: rgb(80, 7, 7);
+}
+
+.red .content-area {
+    color: rgb(204, 204, 204);
+}
+
+.red .content-area a {
+    color: rgb(66, 165, 245);
+}
+
+.red .content-area a:visited {
+    color: rgb(139, 36, 208);
+}

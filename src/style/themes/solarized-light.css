@@ -43,3 +43,20 @@
 .solarized-light .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: rgb(141, 139, 133);
 }
+
+.solarized-light, .solarized-light .content-area, .solarized-light .content-area * {
+    background: rgb(253, 246, 227);
+    border-color: rgb(212, 206, 190);
+}
+
+.solarized-light .content-area {
+    color: rgb(88, 76, 39);
+}
+
+.solarized-light .content-area a {
+    color: rgb(46, 148, 231);
+}
+
+.solarized-light .content-area a:visited {
+    color: rgb(139, 36, 208);
+}

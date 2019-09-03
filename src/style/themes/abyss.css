@@ -43,3 +43,20 @@
 .abyss .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: rgb(82, 83, 86);
 }
+
+.abyss, .abyss .content-area, .abyss .content-area * {
+    background: rgb(0, 12, 24);
+    border-color: rgb(2, 25, 46);
+}
+
+.abyss .content-area {
+    color: rgb(204, 204, 204);
+}
+
+.abyss .content-area a {
+    color: rgb(66, 165, 245);
+}
+
+.abyss .content-area a:visited {
+    color: rgb(139, 36, 208);
+}

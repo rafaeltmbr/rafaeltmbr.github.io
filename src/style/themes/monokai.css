@@ -43,3 +43,20 @@
 .monokai .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: rgb(82, 82, 80);
 }
+
+.monokai, .monokai .content-area, .monokai .content-area * {
+    background: rgb(45, 46, 39);
+    border-color: rgb(67, 68, 57);
+}
+
+.monokai .content-area {
+    color: rgb(204, 204, 204);
+}
+
+.monokai .content-area a {
+    color: rgb(66, 165, 245);
+}
+
+.monokai .content-area a:visited {
+    color: rgb(139, 36, 208);
+}

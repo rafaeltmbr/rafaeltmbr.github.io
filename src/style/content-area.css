@@ -1,18 +1,26 @@
 .content-area {
-    min-height: 100%;
-    padding: 20px 40px;
+    padding: 0 40px;
     max-width: 950px;
     margin: 0 auto;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
 }
 
+.content-area > *:first-child {
+    margin-top: 30px;
+}
+
+.content-area > *:last-child {
+    margin-bottom: 30px;
+}
+
 .content-area img {
     width: 100%;
+    margin-top: 10px;
 }
 
 .content-area h1 {
-    margin-top: 0.7em;
+    margin-top: 1em;
     padding-bottom: 0.5em;
     border-bottom: 1px solid #ddd;
     font-size: 2.0em;
@@ -26,8 +34,8 @@
 }
 
 .content-area p {
-    line-height: 1.6em;
     margin-top: 1em;
+    line-height: 1.6em;
 }
 
 .content-area ul {
