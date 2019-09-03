@@ -71,7 +71,7 @@ function switchPage({target: node}, page) {
     const url = (
         page.charAt(0) != '/'
         ? page :
-        'https://raw.githubusercontent.com/rafaeltmbr/rafaeltmbr.github.io/master/content/' + page
+        'https://raw.githubusercontent.com/rafaeltmbr/rafaeltmbr.github.io/master/content' + page
     );
 
     changePageContent(url);
@@ -84,6 +84,7 @@ function changePageContent(contentAddress) {
     xhttp.onreadystatechange = function() {
         if (this.readyState == this.DONE && this.status == 200) {
             contentArea.innerHTML = parseMarkdown(this.responseText);
+            handleContentAreaExternalURL();
             hideMenuContent();
             setOpacityDefault();
         }
@@ -91,6 +92,20 @@ function changePageContent(contentAddress) {
 
     xhttp.open("GET", contentAddress, true);
     xhttp.send();
+}
+
+function handleContentAreaExternalURL() {
+    const elements = document.querySelectorAll('.content-area a');
+    if (elements.length) {
+        const keys = Object.keys(elements);
+        keys.map(k => {
+            debugger;
+            if (typeof elements[k].href === 'string' && elements[k].href.indexOf('http') === 0)
+                elements[k].target = '_blank';
+            else
+                elements[k].style.pointerEvents = 'none';
+        });
+    }
 }
 
 function parseMarkdown(text) {
