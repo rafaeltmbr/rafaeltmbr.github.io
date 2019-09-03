@@ -1,5 +1,5 @@
 function resizeMenuBar() {
-    const height = document.documentElement.clientHeight;
+    const height = window.innerHeight;
     let menu = document.querySelector('.menu-icons');
     menu.style.height = height + 'px';
     console.log('height:', height);
