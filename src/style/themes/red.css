@@ -11,7 +11,7 @@
     box-shadow: 0 0 3px rgb(51, 0, 0);
 }
 
-.red .menu-content > header {
+.red .menu-categories > li > header {
     background: rgb(67, 26, 26);
     color: rgb(204, 204, 204);
 }

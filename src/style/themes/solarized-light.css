@@ -11,7 +11,7 @@
     box-shadow: 0 0 1px rgb(88, 76, 39);
 }
 
-.solarized-light .menu-content > header {
+.solarized-light .menu-categories > li > header {
     background: rgb(217, 212, 197);
     color: rgb(104, 104, 103);
 }

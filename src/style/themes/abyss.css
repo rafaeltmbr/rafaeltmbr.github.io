@@ -11,7 +11,7 @@
     box-shadow: 0 0 3px rgb(6, 6, 33);
 }
 
-.abyss .menu-content > header {
+.abyss .menu-categories > li > header {
     background: rgb(16, 25, 44);
     color: rgb(204, 204, 204);
 }

@@ -11,7 +11,7 @@
     user-select: none;
 }
 
-.menu-content > header {
+.menu-categories > li > header {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
@@ -22,7 +22,7 @@
 .menu-category-list {
     list-style-type: none;
     overflow: auto;
-    height: calc(100% - 30px);
+    height: calc(100vh - 30px);
 }
 
 .menu-category-list > li {

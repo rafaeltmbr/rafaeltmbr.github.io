@@ -11,7 +11,7 @@
     box-shadow: 0 0 3px #117;
 }
 
-.light-blue .menu-content > header {
+.light-blue .menu-categories > li > header {
     background: #505080;
     color: #fff;
 }

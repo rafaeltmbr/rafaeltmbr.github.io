@@ -11,7 +11,7 @@
     box-shadow: 0 0 3px #444;
 }
 
-.light .menu-content > header {
+.light .menu-categories > li > header {
     background: rgb(221, 221, 221);
     color: rgb(97, 97, 97);
 }

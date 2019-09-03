@@ -11,7 +11,7 @@
     box-shadow: 0 0 3px rgb(30, 31, 28);
 }
 
-.monokai .menu-content > header {
+.monokai .menu-categories > li > header {
     background: rgb(39, 40, 34);
     color: rgb(204, 204, 204);
 }

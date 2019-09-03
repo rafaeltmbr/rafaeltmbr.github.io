@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/style/index.css">
     <link rel="stylesheet" href="./src/style/menu-icons.css">
     <link rel="stylesheet" href="./src/style/menu-content.css">
+    <link rel="stylesheet" href="./src/style/menu-animation.css">
     <link rel="stylesheet" href="./src/style/content-area.css">
     <link rel="stylesheet" href="./src/style/themes/abyss.css">
     <link rel="stylesheet" href="./src/style/themes/dark.css">
@@ -52,168 +53,180 @@
     </div>
 
     <div class="menu-content microcontrollers">
-        <header>Arduino</header>
-        <ul class="menu-category-list">
-            <li>
-                <header>Estrutura principal</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/arduino/setup.md')">setup</li>
-                    <li onclick="switchPage(event, '/arduino/loop.md')">loop</li>
-                </ul>
-            </li>
-            <li>
-                <header>Entrada e Saída (IO)</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/arduino/pinMode.md')">pinMode</li>
-                    <li onclick="switchPage(event, '/arduino/digitalRead.md')">digitalRead</li>
-                    <li onclick="switchPage(event, '/arduino/digitalWrite.md')">digitalWrite</li>
-                    <li onclick="switchPage(event, '/arduino/analogRead.md')">analogRead</li>
-                    <li onclick="switchPage(event, '/arduino/analogWrite.md')">analogWrite</li>
-                </ul>
-            </li>
-            <li>
-                <header>Funções de tempo</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/arduino/delay.md')">delay</li>
-                    <li onclick="switchPage(event, '/arduino/delayMicroseconds.md')">delayMicroseconds</li>
-                    <li onclick="switchPage(event, '/arduino/millis.md')">millis</li>
-                    <li onclick="switchPage(event, '/arduino/micros.md')">micros</li>
-                </ul>
-            </li>
-            <li>
-                <header>Periféricos</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/arduino/Serial.md')">Serial</li>
-                    <li onclick="switchPage(event, '/arduino/LiquidCrystal.md')">LiquidCrystal (LCD)</li>
-                    <li onclick="switchPage(event, '/arduino/WiFi.md')">WiFi</li>
-                    <li onclick="switchPage(event, '/arduino/Bluetooth.md')">Bluetooth</li>
-                </ul>
-            </li>
-            <li>
-                <header>Outros</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/arduino/map.md')">map</li>
-                    <li onclick="switchPage(event, '/arduino/pulseIn.md')">pulseIn</li>
-                    <li onclick="switchPage(event, '/arduino/attachInterrupt.md')">attachInterrupt</li>
-                    <li onclick="switchPage(event, '/arduino/detachInterrupt.md')">detachInterrupt</li>
-                </ul>
-            </li>
-            <li>
-                <header>Projetos</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, 'https://raw.githubusercontent.com/rafaeltmbr/painel-I2C/master/README.md')">Painel I²C</li>
-                </ul>
-            </li>
+        <ul class="menu-categories">
+        <li>
+            <header>Arduino</header>
+            <ul class="menu-category-list show-init">
+                <li>
+                    <header>Estrutura principal</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/arduino/setup.md')">setup</li>
+                        <li onclick="switchPage(event, '/arduino/loop.md')">loop</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Entrada e Saída (IO)</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/arduino/pinMode.md')">pinMode</li>
+                        <li onclick="switchPage(event, '/arduino/digitalRead.md')">digitalRead</li>
+                        <li onclick="switchPage(event, '/arduino/digitalWrite.md')">digitalWrite</li>
+                        <li onclick="switchPage(event, '/arduino/analogRead.md')">analogRead</li>
+                        <li onclick="switchPage(event, '/arduino/analogWrite.md')">analogWrite</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Funções de tempo</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/arduino/delay.md')">delay</li>
+                        <li onclick="switchPage(event, '/arduino/delayMicroseconds.md')">delayMicroseconds</li>
+                        <li onclick="switchPage(event, '/arduino/millis.md')">millis</li>
+                        <li onclick="switchPage(event, '/arduino/micros.md')">micros</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Periféricos</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/arduino/Serial.md')">Serial</li>
+                        <li onclick="switchPage(event, '/arduino/LiquidCrystal.md')">LiquidCrystal (LCD)</li>
+                        <li onclick="switchPage(event, '/arduino/WiFi.md')">WiFi</li>
+                        <li onclick="switchPage(event, '/arduino/Bluetooth.md')">Bluetooth</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Outros</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/arduino/map.md')">map</li>
+                        <li onclick="switchPage(event, '/arduino/pulseIn.md')">pulseIn</li>
+                        <li onclick="switchPage(event, '/arduino/attachInterrupt.md')">attachInterrupt</li>
+                        <li onclick="switchPage(event, '/arduino/detachInterrupt.md')">detachInterrupt</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Projetos</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, 'https://raw.githubusercontent.com/rafaeltmbr/painel-I2C/master/README.md')">Painel I²C</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
         </ul>
     </div>
 
     <div class="menu-content programming">
-        <header>Linguagem C</header>
-        <ul class="menu-category-list">
-            <li>
-                <header>Declarações</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/linguagem-c/variaveis-constantes.md')">Variáveis / Constantes</li>
-                    <li onclick="switchPage(event, '/linguagem-c/declaracao-atribuicao.md')">Declaração / Atribuição</li>
-                    <li onclick="switchPage(event, '/linguagem-c/escopo.md')">Escopo</li>
-                </ul>
-            </li>
-            <li>
-                <header>Tipo de dados</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/linguagem-c/int.md')">int</li>
-                    <li onclick="switchPage(event, '/linguagem-c/char.md')">char</li>
-                    <li onclick="switchPage(event, '/linguagem-c/float.md')">float</li>
-                    <li onclick="switchPage(event, '/linguagem-c/double.md')">double</li>
-                    <li onclick="switchPage(event, '/linguagem-c/modificadores-de-tipo.md')">Modificadores de tipo</li>
-                </ul>
-            </li>
-            <li>
-                <header>Operações</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/linguagem-c/aritimeticas.md')">Aritiméticas</li>
-                    <li onclick="switchPage(event, '/linguagem-c/bit-a-bit.md')">bit-a-bit</li>
-                    <li onclick="switchPage(event, '/linguagem-c/logicas-relacionais.md')">Lógicas / Relacionais</li>
-                    <li onclick="switchPage(event, '/linguagem-c/precedencia-de-operadores.md')">Precedência de operadores</li>
-                    <li onclick="switchPage(event, '/linguagem-c/abreviacoes.md')">Abreviações</li>
-                </ul>
-            </li>
-            <li>
-                <header>Estruturas condicionais</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/linguagem-c/if-else.md')">if / else</li>
-                    <li onclick="switchPage(event, '/linguagem-c/switch-case.md')">switch / case</li>
-                </ul>
-            </li>
-            <li>
-                <header>Estruturas de repetição</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/linguagem-c/while.md')">while</li>
-                    <li onclick="switchPage(event, '/linguagem-c/do-while.md')">do / while</li>
-                    <li onclick="switchPage(event, '/linguagem-c/for.md')">for</li>
-                    <li onclick="switchPage(event, '/linguagem-c/break-continue.md')">break / continue</li>
-                </ul>
-            </li>
-            <li>
-                <header>Estruturas de dados</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/linguagem-c/array-unidimensional.md')">Array unidimensional</li>
-                    <li onclick="switchPage(event, '/linguagem-c/array-multidimensional.md')">Array multidimensional</li>
-                    <li onclick="switchPage(event, '/linguagem-c/union.md')">union</li>
-                    <li onclick="switchPage(event, '/linguagem-c/struct.md')">struct</li>
-                </ul>
-            </li>
-            <li>
-                <header>Funções</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/linguagem-c/retorno.md')">Retorno</li>
-                    <li onclick="switchPage(event, '/linguagem-c/passagem-de-parametros.md')">Passagem de parâmetros</li>
-                    <li onclick="switchPage(event, '/linguagem-c/declaracao-vs-definicao.md')">Declaração vs definição</li>
-                </ul>
-            </li>
-            <li>
-                <header>Preprocessador</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/linguagem-c/include.md')">#include</li>
-                    <li onclick="switchPage(event, '/linguagem-c/define.md')">#define</li>
-                    <li onclick="switchPage(event, '/linguagem-c/compilacao-condicional.md')">Compilação condicional</li>
-                </ul>
-            </li>
-            <li>
-                <header>Outros</header>
-                <ul class="menu-category">
-                    <li onclick="switchPage(event, '/linguagem-c/cast.md')">cast</li>
-                    <li onclick="switchPage(event, '/linguagem-c/sizeof.md')">sizeof</li>
-                    <li onclick="switchPage(event, '/linguagem-c/operador-ternario.md')">Operador ternário</li>
-                    <li onclick="switchPage(event, '/linguagem-c/enderecos.md')">Endereços</li>
-                    <li onclick="switchPage(event, '/linguagem-c/ponteiros.md')">Pointeiros</li>
-                    <li onclick="switchPage(event, '/linguagem-c/alocacao-estatica.md')">Alocação estática</li>
-                    <li onclick="switchPage(event, '/linguagem-c/alocacao-dinamica.md')">Alocação dinâmica</li>
-                </ul>
-            </li>
+        <ul class="menu-categories">
+        <li>
+            <header>Linguagem C</header>
+            <ul class="menu-category-list show-init">
+                <li>
+                    <header>Declarações</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/linguagem-c/variaveis-constantes.md')">Variáveis / Constantes</li>
+                        <li onclick="switchPage(event, '/linguagem-c/declaracao-atribuicao.md')">Declaração / Atribuição</li>
+                        <li onclick="switchPage(event, '/linguagem-c/escopo.md')">Escopo</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Tipo de dados</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/linguagem-c/int.md')">int</li>
+                        <li onclick="switchPage(event, '/linguagem-c/char.md')">char</li>
+                        <li onclick="switchPage(event, '/linguagem-c/float.md')">float</li>
+                        <li onclick="switchPage(event, '/linguagem-c/double.md')">double</li>
+                        <li onclick="switchPage(event, '/linguagem-c/modificadores-de-tipo.md')">Modificadores de tipo</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Operações</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/linguagem-c/aritimeticas.md')">Aritiméticas</li>
+                        <li onclick="switchPage(event, '/linguagem-c/bit-a-bit.md')">bit-a-bit</li>
+                        <li onclick="switchPage(event, '/linguagem-c/logicas-relacionais.md')">Lógicas / Relacionais</li>
+                        <li onclick="switchPage(event, '/linguagem-c/precedencia-de-operadores.md')">Precedência de operadores</li>
+                        <li onclick="switchPage(event, '/linguagem-c/abreviacoes.md')">Abreviações</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Estruturas condicionais</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/linguagem-c/if-else.md')">if / else</li>
+                        <li onclick="switchPage(event, '/linguagem-c/switch-case.md')">switch / case</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Estruturas de repetição</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/linguagem-c/while.md')">while</li>
+                        <li onclick="switchPage(event, '/linguagem-c/do-while.md')">do / while</li>
+                        <li onclick="switchPage(event, '/linguagem-c/for.md')">for</li>
+                        <li onclick="switchPage(event, '/linguagem-c/break-continue.md')">break / continue</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Estruturas de dados</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/linguagem-c/array-unidimensional.md')">Array unidimensional</li>
+                        <li onclick="switchPage(event, '/linguagem-c/array-multidimensional.md')">Array multidimensional</li>
+                        <li onclick="switchPage(event, '/linguagem-c/union.md')">union</li>
+                        <li onclick="switchPage(event, '/linguagem-c/struct.md')">struct</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Funções</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/linguagem-c/retorno.md')">Retorno</li>
+                        <li onclick="switchPage(event, '/linguagem-c/passagem-de-parametros.md')">Passagem de parâmetros</li>
+                        <li onclick="switchPage(event, '/linguagem-c/declaracao-vs-definicao.md')">Declaração vs definição</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Preprocessador</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/linguagem-c/include.md')">#include</li>
+                        <li onclick="switchPage(event, '/linguagem-c/define.md')">#define</li>
+                        <li onclick="switchPage(event, '/linguagem-c/compilacao-condicional.md')">Compilação condicional</li>
+                    </ul>
+                </li>
+                <li>
+                    <header>Outros</header>
+                    <ul class="menu-category">
+                        <li onclick="switchPage(event, '/linguagem-c/cast.md')">cast</li>
+                        <li onclick="switchPage(event, '/linguagem-c/sizeof.md')">sizeof</li>
+                        <li onclick="switchPage(event, '/linguagem-c/operador-ternario.md')">Operador ternário</li>
+                        <li onclick="switchPage(event, '/linguagem-c/enderecos.md')">Endereços</li>
+                        <li onclick="switchPage(event, '/linguagem-c/ponteiros.md')">Pointeiros</li>
+                        <li onclick="switchPage(event, '/linguagem-c/alocacao-estatica.md')">Alocação estática</li>
+                        <li onclick="switchPage(event, '/linguagem-c/alocacao-dinamica.md')">Alocação dinâmica</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
         </ul>
     </div>
 
     <div class="menu-content settings">
-        <header>Configurações</header>
-        <ul class="menu-category-list">
-            <li>
-                <header>Temas</header>
-                <ul class="menu-category">
-                    <li id="themeNode1" onclick="changeBodyTheme(event, 'abyss')">Abyss</li>
-                    <li id="themeNode2" onclick="changeBodyTheme(event, 'dark')">Dark</li>
-                    <li id="themeNode3" onclick="changeBodyTheme(event, 'dracula')">Dracula</li>
-                    <li id="themeNode4" onclick="changeBodyTheme(event, 'kimbie-dark')">Kimbie Dark</li>
-                    <li id="themeNode5" onclick="changeBodyTheme(event, 'monokai')">Monokai</li>
-                    <li id="themeNode6" onclick="changeBodyTheme(event, 'monokai-dimmed')">Monokai Dimmed</li>
-                    <li id="themeNode7" onclick="changeBodyTheme(event, 'red')">Red</li>
-                    <li id="themeNode8" onclick="changeBodyTheme(event, 'solarized-dark')">Solarized Dark</li>
-                    <li id="themeNode9" onclick="changeBodyTheme(event, 'solarized-light')">Solarized Light</li>
-                    <li id="themeNode10" onclick="changeBodyTheme(event, 'light-blue')">Light Blue</li>
-                    <li id="themeNode11" onclick="changeBodyTheme(event, 'light')">Light</li>
-                    <li id="themeNode12" onclick="changeBodyTheme(event, 'black-and-white')">Black and White</li>
-                </ul>
-            </li>
+        <ul class="menu-categories">
+        <li>
+            <header>Configurações</header>
+            <ul class="menu-category-list show-init">
+                <li>
+                    <header>Temas</header>
+                    <ul class="menu-category show-init">
+                        <li id="themeNode1" onclick="changeBodyTheme(event, 'abyss')">Abyss</li>
+                        <li id="themeNode2" onclick="changeBodyTheme(event, 'dark')">Dark</li>
+                        <li id="themeNode3" onclick="changeBodyTheme(event, 'dracula')">Dracula</li>
+                        <li id="themeNode4" onclick="changeBodyTheme(event, 'kimbie-dark')">Kimbie Dark</li>
+                        <li id="themeNode5" onclick="changeBodyTheme(event, 'monokai')">Monokai</li>
+                        <li id="themeNode6" onclick="changeBodyTheme(event, 'monokai-dimmed')">Monokai Dimmed</li>
+                        <li id="themeNode7" onclick="changeBodyTheme(event, 'red')">Red</li>
+                        <li id="themeNode8" onclick="changeBodyTheme(event, 'solarized-dark')">Solarized Dark</li>
+                        <li id="themeNode9" onclick="changeBodyTheme(event, 'solarized-light')">Solarized Light</li>
+                        <li id="themeNode10" onclick="changeBodyTheme(event, 'light-blue')">Light Blue</li>
+                        <li id="themeNode11" onclick="changeBodyTheme(event, 'light')">Light</li>
+                        <li id="themeNode12" onclick="changeBodyTheme(event, 'black-and-white')">Black and White</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
         </ul>
     </div>
 
@@ -221,5 +234,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
     <script src="./src/script/index.js"></script>
+    <script src="./src/script/menu-animation.js"></script>
 </body>
 </html>

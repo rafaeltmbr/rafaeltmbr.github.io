@@ -1,0 +1,11 @@
+.menu-content ul header ~ *{
+    display: none;
+}
+
+.menu-content ul header {
+    cursor: pointer;
+}
+
+.menu-content .show-init {
+    display: block;
+}

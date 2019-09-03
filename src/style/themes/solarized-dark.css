@@ -11,7 +11,7 @@
     box-shadow: 0 0 3px rgb(0, 33, 43);
 }
 
-.solarized-dark .menu-content > header {
+.solarized-dark .menu-categories > li > header {
     background: rgb(26, 52, 60);
     color: rgb(204, 204, 204);
 }

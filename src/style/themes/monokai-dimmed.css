@@ -11,7 +11,7 @@
     box-shadow: 0 0 3px rgb(39, 39, 39);
 }
 
-.monokai-dimmed .menu-content > header {
+.monokai-dimmed .menu-categories > li > header {
     background: rgb(80, 80, 80);
     color: rgb(204, 204, 204);
 }
