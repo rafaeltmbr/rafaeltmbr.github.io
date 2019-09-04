@@ -50,7 +50,6 @@ function hideMenuCategories(node) {
 }
 
 function setListHeight(selector) {
-    console.log('resize');
     const list = document.querySelectorAll(selector);
     if (!list)
         return;
@@ -65,6 +64,8 @@ function setListHeight(selector) {
 }
 
 function setMenuCategoryListHeight() {
+    alert('rezied');
+    console.log('resize');
     setListHeight('.programming .menu-category-list');
     setListHeight('.microcontrollers .menu-category-list');
 }
