@@ -25,6 +25,14 @@
     height: calc(100vh - 30px);
 }
 
+.programming .menu-category-list {
+    height: calc(100vh - 60px - 2px);
+}
+
+.microcontrollers .menu-category-list {
+    height: calc(100vh - 90px - 3px);
+}
+
 .menu-category-list > li {
     margin: 20px 0;
 }
@@ -46,4 +54,8 @@
 
 .menu-category-list::-webkit-scrollbar {
     width: 10px;
+}
+
+.menu-categories > li > header {
+    border-bottom: 1px solid;
 }

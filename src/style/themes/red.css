@@ -13,7 +13,12 @@
 
 .red .menu-categories > li > header {
     background: rgb(67, 26, 26);
+    border-color: rgb(51, 0, 0);
     color: rgb(204, 204, 204);
+}
+
+.red .menu-categories > li > header:hover {
+    background: rgb(75, 16, 16);
 }
 
 .red .menu-category-list > li > header {
