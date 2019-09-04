@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 60px;
-    bottom: 0;
+    height: 100%;
     width: 300px;
     max-width: calc(100% - 60px);
 }
@@ -27,11 +27,15 @@
 }
 
 .programming .menu-category-list {
-    height: calc(100vh - 60px - 2px);
+    /* calculated through javascript in order to avoid address bar hiding issues 
+    height: calc(100vh - 60px); 
+    */
 }
 
 .microcontrollers .menu-category-list {
-    height: calc(100vh - 90px - 3px);
+    /* calculated through javascript in order to avoid address bar hiding issues 
+    height: calc(100vh - 90px); 
+    */
 }
 
 .menu-category-list > li {

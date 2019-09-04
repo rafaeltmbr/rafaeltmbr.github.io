@@ -49,4 +49,27 @@ function hideMenuCategories(node) {
     });
 }
 
+function setListHeight(selector) {
+    console.log('resize');
+    const list = document.querySelectorAll(selector);
+    if (!list)
+        return;
+    
+    const progArray = [];
+    Object.keys(list).map(k => progArray.push(list[k]));
+    
+    const {clientHeight} = document.documentElement;
+    const header = document.querySelector('.menu-categories > li > header');
+    const height = parseInt(window.getComputedStyle(header).height);
+    progArray.map(l => l.style.height = (clientHeight - progArray.length * height)  + 'px');
+}
+
+function setMenuCategoryListHeight() {
+    setListHeight('.programming .menu-category-list');
+    setListHeight('.microcontrollers .menu-category-list');
+}
+
+window.addEventListener('resize', setMenuCategoryListHeight);
+window.addEventListener('load', setMenuCategoryListHeight);
+
 animateHeaders();
