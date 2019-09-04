@@ -115,6 +115,21 @@ function parseMarkdown(text) {
     return parser.makeHtml(text);
 }
 
+function checkHideMenuContentEvent({target}) {
+    if (target.tagName.toLowerCase() === 'body') {
+        hideMenuContent();
+        return;
+    }
+    
+    while (typeof target.className !== 'string' || target.className.indexOf('content-area') < 0) {
+        target = target.parentElement;
+        if (!target)
+            return;
+    }
+
+    hideMenuContent();
+}
+
 window.addEventListener('load', () => {
     let themeClass = localStorage.getItem('themeClass');
     let themeNodeId = localStorage.getItem('themeNodeId');

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./src/style/themes/black-and-white.css">
     <title>Apoio Microcontroladores</title>
 </head>
-<body class="light">
+<body class="light" onclick="checkHideMenuContentEvent(event)">
     <div class="menu-icons">
         <div class="menu-top-container">
             <button class="menu-button menu-low-opacity" onclick="switchMenu(event, 'home')">
@@ -245,7 +245,7 @@
         </ul>
     </div>
 
-    <div class="content-area"></div>
+    <div class="content-area" onclick="checkHideMenuContentEvent(event)"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
     <script src="./src/script/index.js"></script>
