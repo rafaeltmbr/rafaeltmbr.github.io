@@ -5,6 +5,10 @@ html, body {
     background: transparent;
 }
 
+body {
+    margin-left: 60px;
+}
+
 * {
     list-style-type: none;
 }
