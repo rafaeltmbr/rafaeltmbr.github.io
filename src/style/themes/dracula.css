@@ -37,15 +37,15 @@
     background: rgb(49, 50, 65);
 }
 
-.dracula .menu-category-list::-webkit-scrollbar-track {
+.dracula::-webkit-scrollbar-track, .dracula .menu-category-list::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.dracula .menu-category-list::-webkit-scrollbar-thumb {
+.dracula::-webkit-scrollbar-thumb, .dracula .menu-category-list::-webkit-scrollbar-thumb {
     background: rgb(72, 73, 80);
 }
 
-.dracula .menu-category-list::-webkit-scrollbar-thumb:hover {
+.dracula::-webkit-scrollbar-thumb:hover, .dracula .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: rgb(82, 83, 86);
 }
 

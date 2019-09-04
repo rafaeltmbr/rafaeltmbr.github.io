@@ -37,15 +37,15 @@
     background: rgb(0, 51, 64);
 }
 
-.solarized-dark .menu-category-list::-webkit-scrollbar-track {
+.solarized-dark::-webkit-scrollbar-track, .solarized-dark .menu-category-list::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.solarized-dark .menu-category-list::-webkit-scrollbar-thumb {
+.solarized-dark::-webkit-scrollbar-thumb, .solarized-dark .menu-category-list::-webkit-scrollbar-thumb {
     background: rgb(48, 68, 74);
 }
 
-.solarized-dark .menu-category-list::-webkit-scrollbar-thumb:hover {
+.solarized-dark::-webkit-scrollbar-thumb:hover, .solarized-dark .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: rgb(70, 80, 83);
 }
 

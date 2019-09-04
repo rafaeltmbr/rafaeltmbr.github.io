@@ -37,15 +37,15 @@
     background: rgb(228, 230, 241);
 }
 
-.light .menu-category-list::-webkit-scrollbar-track {
+.light::-webkit-scrollbar-track, .light .menu-category-list::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.light .menu-category-list::-webkit-scrollbar-thumb {
+.light::-webkit-scrollbar-thumb, .light .menu-category-list::-webkit-scrollbar-thumb {
     background: rgb(186, 186, 186);
 }
 
-.light .menu-category-list::-webkit-scrollbar-thumb:hover {
+.light::-webkit-scrollbar-thumb:hover, .light .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: rgb(142, 142, 142);
 }
 

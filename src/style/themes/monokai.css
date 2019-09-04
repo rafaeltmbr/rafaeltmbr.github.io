@@ -37,15 +37,15 @@
     background: rgb(65, 67, 57);
 }
 
-.monokai .menu-category-list::-webkit-scrollbar-track {
+.monokai::-webkit-scrollbar-track, .monokai .menu-category-list::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.monokai .menu-category-list::-webkit-scrollbar-thumb {
+.monokai::-webkit-scrollbar-thumb, .monokai .menu-category-list::-webkit-scrollbar-thumb {
     background: rgb(71, 72, 68);
 }
 
-.monokai .menu-category-list::-webkit-scrollbar-thumb:hover {
+.monokai::-webkit-scrollbar-thumb:hover, .monokai .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: rgb(82, 82, 80);
 }
 

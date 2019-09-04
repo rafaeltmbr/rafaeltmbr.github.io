@@ -37,15 +37,15 @@
     background: #bbd;
 }
 
-.light-blue .menu-category-list::-webkit-scrollbar-track {
+.light-blue::-webkit-scrollbar-track, .light-blue .menu-category-list::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.light-blue .menu-category-list::-webkit-scrollbar-thumb {
+.light-blue::-webkit-scrollbar-thumb, .light-blue .menu-category-list::-webkit-scrollbar-thumb {
     background: #aac;
 }
 
-.light-blue .menu-category-list::-webkit-scrollbar-thumb:hover {
+.light-blue::-webkit-scrollbar-thumb:hover, .light-blue .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: #77a;
 }
 

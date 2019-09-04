@@ -37,15 +37,15 @@
     background: rgb(21, 32, 55);
 }
 
-.abyss .menu-category-list::-webkit-scrollbar-track {
+.abyss::-webkit-scrollbar-track, .abyss .menu-category-list::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.abyss .menu-category-list::-webkit-scrollbar-thumb {
+.abyss::-webkit-scrollbar-thumb, .abyss .menu-category-list::-webkit-scrollbar-thumb {
     background: rgb(72, 73, 80);
 }
 
-.abyss .menu-category-list::-webkit-scrollbar-thumb:hover {
+.abyss::-webkit-scrollbar-thumb:hover, .abyss .menu-category-list::-webkit-scrollbar-thumb:hover {
     background: rgb(82, 83, 86);
 }
 
