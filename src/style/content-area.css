@@ -7,11 +7,13 @@
 }
 
 .content-area > *:first-child {
-    margin-top: 30px;
+    padding-top: 30px;
+    margin-top: 0;
 }
 
 .content-area > *:last-child {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
 }
 
 .content-area img {
