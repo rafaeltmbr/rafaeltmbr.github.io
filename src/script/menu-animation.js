@@ -2,15 +2,13 @@ function animateHeaders() {
     const headers = document.getElementsByTagName('header');
     const k = Object.keys(headers);
     k.map( h => headers[h].addEventListener('click', (event) => {
-        hideSameLevelList(event);
+        const {target} = event;
+        if (target.parentElement && target.parentElement.parentElement
+            && target.parentElement.parentElement.className.indexOf('menu-categories') >= 0) {
+            hideMenuCategories(target.parentElement.parentElement);
+        }
         switchListAroundHeader(event);
     }));
-}
-
-function hideSameLevelList({target: header}) {
-    const sibling = header.parentElement && header.parentElement.children;
-    /* Hide same level elements, but still save the current list state */
-
 }
 
 function switchListAroundHeader({target: header}) {
@@ -24,6 +22,31 @@ function switchListAroundHeader({target: header}) {
             }
         });
     }
+}
+
+function hideMenuCategories(node) {
+    if (!node)
+        return;
+
+    while(node.className.indexOf('menu-categories') < 0) {
+        node = node.parentElement;
+        if (!node)
+            return;
+    }
+
+    const liList = node.children;
+    const liArray = [];
+    Object.keys(liList).map(k => liArray.push(liList[k]));
+    
+    liArray.map(li => {
+        const liChildrenArray = [];
+        Object.keys(li.children).map(k => liChildrenArray.push(li.children[k]));
+
+        liChildrenArray.map(i => {
+            if (i.tagName.toLowerCase() === 'ul' || i.tagName.toLowerCase() === 'ol')
+                i.style.display = 'none';
+        });
+    });
 }
 
 animateHeaders();
