@@ -12,8 +12,13 @@
 }
 
 .monokai .menu-categories > li > header {
-    background: rgb(39, 40, 34);
+    background: rgb(50, 51, 40);
     color: rgb(204, 204, 204);
+    border-color: rgb(30, 31, 28);
+}
+
+.monokai .menu-categories > li > header:hover {
+    background: rgb(58, 59, 47);
 }
 
 .monokai .menu-category-list > li > header {

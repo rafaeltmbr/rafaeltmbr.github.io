@@ -12,8 +12,13 @@
 }
 
 .solarized-dark .menu-categories > li > header {
-    background: rgb(26, 52, 60);
+    background: rgb(24, 56, 66);
     color: rgb(204, 204, 204);
+    border-color: rgb(0, 33, 43);
+}
+
+.solarized-dark .menu-categories > li > header:hover {
+    background: rgb(33, 70, 82);
 }
 
 .solarized-dark .menu-category-list > li > header {

@@ -14,6 +14,11 @@
 .abyss .menu-categories > li > header {
     background: rgb(16, 25, 44);
     color: rgb(204, 204, 204);
+    border-color: rgb(6, 6, 33);
+}
+
+.abyss .menu-categories > li > header:hover {
+    background: rgb(11, 30, 71);
 }
 
 .abyss .menu-category-list > li > header {

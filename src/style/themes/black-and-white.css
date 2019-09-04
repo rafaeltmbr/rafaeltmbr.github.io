@@ -12,8 +12,13 @@
 }
 
 .black-and-white .menu-categories > li > header {
-    background: #111;
+    background: #222;
     color: #fff;
+    border-color: #fff;
+}
+
+.black-and-white .menu-categories > li > header:hover {
+    background: #333;
 }
 
 .black-and-white .menu-category-list > li > header {
@@ -29,7 +34,7 @@
 }
 
 .black-and-white .menu-category .selected {
-    font-weight: bold;
+    background: #ccc;
 }
 
 .black-and-white .menu-category-list::-webkit-scrollbar-track {

@@ -14,6 +14,11 @@
 .light-blue .menu-categories > li > header {
     background: #505080;
     color: #fff;
+    border-color: #cce;
+}
+
+.light-blue .menu-categories > li > header:hover {
+    background: #434370;
 }
 
 .light-blue .menu-category-list > li > header {

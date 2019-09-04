@@ -14,6 +14,11 @@
 .kimbie-dark .menu-categories > li > header {
     background: rgb(69, 57, 40);
     color: rgb(204, 204, 204);
+    border-color: rgb(54, 39, 18);
+}
+
+.kimbie-dark .menu-categories > li > header:hover {
+    background: rgb(88, 67, 36);
 }
 
 .kimbie-dark .menu-category-list > li > header {

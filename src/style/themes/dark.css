@@ -14,6 +14,11 @@
 .dark .menu-categories > li > header {
     background: rgb(56, 56, 56);
     color: rgb(204, 204, 204);
+    border-color: rgb(37, 37, 38);
+}
+
+.dark .menu-categories > li > header:hover {
+    background: rgb(49, 48, 48);
 }
 
 .dark .menu-category-list > li > header {
