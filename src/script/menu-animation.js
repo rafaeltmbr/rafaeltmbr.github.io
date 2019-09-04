@@ -57,15 +57,13 @@ function setListHeight(selector) {
     const progArray = [];
     Object.keys(list).map(k => progArray.push(list[k]));
     
-    const {clientHeight} = document.documentElement;
+    const clientHeight = window.innerHeight;
     const header = document.querySelector('.menu-categories > li > header');
     const height = parseInt(window.getComputedStyle(header).height);
     progArray.map(l => l.style.height = (clientHeight - progArray.length * height)  + 'px');
 }
 
 function setMenuCategoryListHeight() {
-    alert('rezied');
-    console.log('resize');
     setListHeight('.programming .menu-category-list');
     setListHeight('.microcontrollers .menu-category-list');
 }
