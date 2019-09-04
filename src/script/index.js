@@ -99,7 +99,10 @@ function handleContentAreaExternalURL() {
     if (elements.length) {
         const keys = Object.keys(elements);
         keys.map(k => {
-            if (elements[k].outerHTML.indexOf('href="http') !== -1)
+            const hrefIndex = elements[k].outerHTML.indexOf('href');
+            const httpIndex = elements[k].outerHTML.indexOf('http');
+
+            if (httpIndex > hrefIndex && hrefIndex !== -1)
                 elements[k].target = '_blank';
             else
                 elements[k].style.pointerEvents = 'none';
