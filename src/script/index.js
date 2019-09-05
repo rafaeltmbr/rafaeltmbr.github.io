@@ -79,13 +79,15 @@ function switchPage({target: node}, page) {
     changePageContent(url);
 }
 
-function changePageContent(contentAddress) {
+function changePageContent(contentAddress, backButton = false) {
     let xhttp = new XMLHttpRequest();
     let contentArea = document.querySelector('.content-area');
 
     xhttp.onreadystatechange = function() {
         if (this.readyState == this.DONE && this.status == 200) {
             contentArea.innerHTML = parseMarkdown(this.responseText);
+            if (!backButton)
+                window.history.pushState(contentArea.innerHTML, '', window.location.pathname + '#' + contentAddress);
             setExternalLinkToBlank();
             hideMenuContent();
             setOpacityDefault();
@@ -122,7 +124,7 @@ function checkHideMenuContentEvent({target}) {
     hideMenuContent();
 }
 
-window.addEventListener('load', () => {
+function restoreTheme() {
     let themeClass = localStorage.getItem('themeClass');
     let themeNodeId = localStorage.getItem('themeNodeId');
 
@@ -130,4 +132,13 @@ window.addEventListener('load', () => {
     
     if (themeClass && node)
         changeBodyTheme({target: node}, themeClass);
-});
+}
+
+function handleHashNavigation(backButton = false) {
+    if (window.location.hash)
+        changePageContent(window.location.hash.slice(1), backButton);
+}
+
+window.addEventListener('load', restoreTheme);
+window.addEventListener('load', handleHashNavigation);
+window.addEventListener('popstate', () => handleHashNavigation(true));
