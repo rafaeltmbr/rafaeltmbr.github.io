@@ -16,10 +16,12 @@ function switchListAroundHeader({target: header}) {
     if (sibling) {
         const keys = Object.keys(sibling);
         keys.map(k => {
-            if (sibling[k].tagName.toLowerCase() === 'ul' || sibling[k].tagName.toLowerCase() === 'ol') {
+            const tag = sibling[k].tagName.toLowerCase();
+            if ( tag === 'ul' || tag === 'ol') {
                 const display = window.getComputedStyle(sibling[k]).display;
                 sibling[k].style.display = ( display === 'none' ? 'block' : 'none');
-            }
+            } else if (tag === 'header')
+                sibling[k].className = 'selected-header';
         });
     }
 }
@@ -43,8 +45,11 @@ function hideMenuCategories(node) {
         Object.keys(li.children).map(k => liChildrenArray.push(li.children[k]));
 
         liChildrenArray.map(i => {
-            if (i.tagName.toLowerCase() === 'ul' || i.tagName.toLowerCase() === 'ol')
+            const tag = i.tagName.toLowerCase();
+            if ( tag === 'ul' || tag === 'ol')
                 i.style.display = 'none';
+            else if (tag === 'header')
+                i.className = '';
         });
     });
 }

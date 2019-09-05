@@ -60,3 +60,8 @@
 .menu-category-list::-webkit-scrollbar {
     width: 10px;
 }
+
+.menu-categories > li > .selected-header {
+    font-style: italic;
+    pointer-events: none;
+}
