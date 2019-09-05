@@ -10,6 +10,7 @@ function switchMenu({target}, targetClass) {
 function switchDisplay(node, currentDisplay) {
     hideMenuContent();
     node.style.display = (currentDisplay === 'block' ? 'none' : 'block');
+    document.body.style.overflow = (currentDisplay === 'block' ? 'auto' : 'hidden');
 }
 
 function hideMenuContent() {
@@ -18,6 +19,7 @@ function hideMenuContent() {
         const keys = Object.keys(menuContent);
         keys.map(k => menuContent[k].style.display = 'none');
     }
+    document.body.style.overflow = 'auto';
 }
 
 function switchOpacity(target, currentDisplay) {
