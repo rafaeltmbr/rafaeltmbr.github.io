@@ -134,11 +134,22 @@ function restoreTheme() {
         changeBodyTheme({target: node}, themeClass);
 }
 
-function handleHashNavigation(backButton = false) {
+function handleHashNavigation(event, backButton = false) {
     if (window.location.hash)
         changePageContent(window.location.hash.slice(1), backButton);
+    else if(backButton) {
+        document.querySelector('.content-area').innerHTML = handleHashNavigation.homepage || '';
+    }
+}
+
+function saveHomepage() {
+    if (!window.location.hash)
+        handleHashNavigation.homepage = document.querySelector('.content-area').innerHTML;
 }
 
 window.addEventListener('load', restoreTheme);
-window.addEventListener('load', handleHashNavigation);
-window.addEventListener('popstate', () => handleHashNavigation(true));
+window.addEventListener('load', () => {
+    saveHomepage();
+    handleHashNavigation()
+});
+window.addEventListener('popstate', () => handleHashNavigation(null, true));
