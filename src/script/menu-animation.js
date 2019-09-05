@@ -20,9 +20,12 @@ function switchListAroundHeader({target: header}) {
             if ( tag === 'ul' || tag === 'ol') {
                 const display = window.getComputedStyle(sibling[k]).display;
                 sibling[k].style.display = ( display === 'none' ? 'block' : 'none');
-            } else if (tag === 'header')
-                sibling[k].className = 'selected-header';
+            } 
         });
+    }
+    if (header.parentElement && header.parentElement.parentElement
+        && header.parentElement.parentElement.className.indexOf('menu-categories') >= 0) {
+            header.className = 'selected-header';
     }
 }
 
@@ -75,5 +78,4 @@ function setMenuCategoryListHeight() {
 
 window.addEventListener('resize', setMenuCategoryListHeight);
 window.addEventListener('load', setMenuCategoryListHeight);
-
-animateHeaders();
+window.addEventListener('load', animateHeaders);
