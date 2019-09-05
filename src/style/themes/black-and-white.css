@@ -58,10 +58,10 @@
     color: #000;
 }
 
-.black-and-white .content-area a {
+.black-and-white .content-area a[href^="http"] {
     color: rgb(45, 59, 185);
 }
 
-.black-and-white .content-area a:visited {
+.black-and-white .content-area a[href^="http"]:visited {
     color: rgb(139, 36, 208);
 }

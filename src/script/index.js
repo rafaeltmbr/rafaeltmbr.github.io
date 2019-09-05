@@ -86,7 +86,7 @@ function changePageContent(contentAddress) {
     xhttp.onreadystatechange = function() {
         if (this.readyState == this.DONE && this.status == 200) {
             contentArea.innerHTML = parseMarkdown(this.responseText);
-            handleContentAreaExternalURL();
+            setExternalLinkToBlank();
             hideMenuContent();
             setOpacityDefault();
         }
@@ -96,20 +96,10 @@ function changePageContent(contentAddress) {
     xhttp.send();
 }
 
-function handleContentAreaExternalURL() {
-    const elements = document.querySelectorAll('.content-area a');
-    if (elements.length) {
-        const keys = Object.keys(elements);
-        keys.map(k => {
-            const hrefIndex = elements[k].outerHTML.indexOf('href');
-            const httpIndex = elements[k].outerHTML.indexOf('http');
-
-            if (httpIndex > hrefIndex && hrefIndex !== -1)
-                elements[k].target = '_blank';
-            else
-                elements[k].style.pointerEvents = 'none';
-        });
-    }
+function setExternalLinkToBlank() {
+    const links = document.querySelectorAll('.content-area a[href^="http"]');
+    if (links && links.length)
+        Object.keys(links).map(k => links[k].setAttribute('target', '_blank'));
 }
 
 function parseMarkdown(text) {
