@@ -17,8 +17,8 @@
     border-color: rgb(37, 37, 38);
 }
 
-.dark .menu-categories > li > header:hover {
-    background: rgb(49, 48, 48);
+.dark .menu-categories > li > header:hover, .dark .menu-categories > li > header.selected-header {
+    background: rgb(47, 47, 47);
 }
 
 .dark .menu-category-list > li > header {

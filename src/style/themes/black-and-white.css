@@ -17,7 +17,7 @@
     border-color: #fff;
 }
 
-.black-and-white .menu-categories > li > header:hover {
+.black-and-white .menu-categories > li > header:hover, .black-and-white .menu-categories > li > header.selected-header {
     background: #333;
 }
 

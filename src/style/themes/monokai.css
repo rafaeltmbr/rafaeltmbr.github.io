@@ -17,7 +17,7 @@
     border-color: rgb(30, 31, 28);
 }
 
-.monokai .menu-categories > li > header:hover {
+.monokai .menu-categories > li > header:hover, .monokai .menu-categories > li > header.selected-header {
     background: rgb(58, 59, 47);
 }
 

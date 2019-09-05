@@ -17,7 +17,7 @@
     border-color: rgb(0, 33, 43);
 }
 
-.solarized-dark .menu-categories > li > header:hover {
+.solarized-dark .menu-categories > li > header:hover, .solarized-dark .menu-categories > li > header.selected-header {
     background: rgb(33, 70, 82);
 }
 

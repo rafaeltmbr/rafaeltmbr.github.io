@@ -17,8 +17,8 @@
     border-color: rgb(54, 39, 18);
 }
 
-.kimbie-dark .menu-categories > li > header:hover {
-    background: rgb(88, 67, 36);
+.kimbie-dark .menu-categories > li > header:hover, .kimbie-dark .menu-categories > li > header.selected-header {
+    background: rgb(80, 61, 32);
 }
 
 .kimbie-dark .menu-category-list > li > header {

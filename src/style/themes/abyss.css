@@ -17,7 +17,7 @@
     border-color: rgb(6, 6, 33);
 }
 
-.abyss .menu-categories > li > header:hover {
+.abyss .menu-categories > li > header:hover, .abyss .menu-categories > li > header.selected-header {
     background: rgb(11, 30, 71);
 }
 

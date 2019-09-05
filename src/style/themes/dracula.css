@@ -17,8 +17,8 @@
     border-color: rgb(33, 34, 44);
 }
 
-.dracula .menu-categories > li > header:hover {
-    background: rgb(49, 52, 68);
+.dracula .menu-categories > li > header:hover, .dracula .menu-categories > li > header.selected-header {
+    background: rgb(47, 50, 66);
 }
 
 .dracula .menu-category-list > li > header {

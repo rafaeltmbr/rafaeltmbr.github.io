@@ -17,7 +17,7 @@
     border-color: #cce;
 }
 
-.light-blue .menu-categories > li > header:hover {
+.light-blue .menu-categories > li > header:hover, .light-blue .menu-categories > li > header.selected-header {
     background: #434370;
 }
 
