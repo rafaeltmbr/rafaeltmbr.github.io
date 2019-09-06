@@ -62,7 +62,7 @@
     color: rgb(139, 36, 208);
 }
 
-.solarized-dark .menu-button .menu-icon-svg{
+.solarized-dark .menu-button .menu-icon-svg, .solarized-dark .menu-low-brightness .menu-icon-svg {
     fill: rgb(153, 175, 181);
 }
 

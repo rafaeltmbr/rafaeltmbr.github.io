@@ -27,15 +27,14 @@ function switchBrightness(target, currentDisplay) {
     while(target.nodeName.toUpperCase() !== 'BUTTON' && target.parentElement)
         target = target.parentElement;
     target.className = 'menu-button';
-    if (currentDisplay !== 'block')
-        target.className += ' menu-high-brightness';
+    target.className += (currentDisplay === 'block' ? ' menu-low-brightness' : ' menu-high-brightness');
 }
 
 function setButtonLowBrightness() {
     const menuButton = document.getElementsByClassName('menu-button');
     if (menuButton) {
         const keys = Object.keys(menuButton);
-        keys.map(k => menuButton[k].className = 'menu-button');
+        keys.map(k => menuButton[k].className = 'menu-button menu-low-brightness');
     }
 }
 

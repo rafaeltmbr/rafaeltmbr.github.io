@@ -62,7 +62,7 @@
     color: rgb(139, 36, 208);
 }
 
-.black-and-white .menu-button .menu-icon-svg{
+.black-and-white .menu-button .menu-icon-svg, .black-and-white .menu-low-brightness .menu-icon-svg {
     fill: rgb(170, 170, 170);
 }
 

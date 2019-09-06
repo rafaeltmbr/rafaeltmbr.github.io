@@ -62,7 +62,7 @@
     color: rgb(175, 9, 190);
 }
 
-.dracula .menu-button .menu-icon-svg{
+.dracula .menu-button .menu-icon-svg, .dracula .menu-low-brightness .menu-icon-svg {
     fill: rgb(98, 114, 164);
 }
 
