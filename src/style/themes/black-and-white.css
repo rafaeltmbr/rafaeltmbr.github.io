@@ -65,3 +65,11 @@
 .black-and-white .content-area a[href^="http"]:visited {
     color: rgb(139, 36, 208);
 }
+
+.black-and-white .menu-button .menu-icon-svg{
+    fill: rgb(170, 170, 170);
+}
+
+.black-and-white .menu-button:hover .menu-icon-svg, .black-and-white .menu-high-brightness .menu-icon-svg {
+    fill: rgb(255, 255, 255);
+}

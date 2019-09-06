@@ -2,10 +2,6 @@
     background-color: rgb(5, 19, 54);
 }
 
-.abyss .menu-button svg {
-    fill: #fff;
-}
-
 .abyss .menu-content {
     background: rgb(6, 6, 33);
     box-shadow: 0 0 3px rgb(6, 6, 33);
@@ -64,4 +60,12 @@
 
 .abyss .content-area a[href^="http"]:visited {
     color: rgb(139, 36, 208);
+}
+
+.abyss .menu-button .menu-icon-svg{
+    fill: #aaa;
+}
+
+.abyss .menu-button:hover .menu-icon-svg, .abyss .menu-high-brightness .menu-icon-svg {
+    fill: #fff;
 }

@@ -2,10 +2,6 @@
     background-color: rgb(51, 51, 51);
 }
 
-.dark .menu-button svg {
-    fill: #fff;
-}
-
 .dark .menu-content {
     background: rgb(37, 37, 38);
     box-shadow: 0 0 3px rgb(37, 37, 38);
@@ -64,4 +60,12 @@
 
 .dark .content-area a[href^="http"]:visited {
     color: rgb(139, 36, 208);
+}
+
+.dark .menu-button .menu-icon-svg{
+    fill: #aaa;
+}
+
+.dark .menu-button:hover .menu-icon-svg, .dark .menu-high-brightness .menu-icon-svg {
+    fill: #fff;
 }

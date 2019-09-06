@@ -2,10 +2,6 @@
     background-color: rgb(53, 53, 53);
 }
 
-.monokai-dimmed .menu-button svg {
-    fill: #fff;
-}
-
 .monokai-dimmed .menu-content {
     background: rgb(39, 39, 39);
     box-shadow: 0 0 3px rgb(39, 39, 39);
@@ -64,4 +60,12 @@
 
 .monokai-dimmed .content-area a[href^="http"]:visited {
     color: rgb(139, 36, 208);
+}
+
+.monokai-dimmed .menu-button .menu-icon-svg{
+    fill: rgb(174, 174, 174);
+}
+
+.monokai-dimmed .menu-button:hover .menu-icon-svg, .monokai-dimmed .menu-high-brightness .menu-icon-svg {
+    fill: rgb(255, 255, 255);
 }

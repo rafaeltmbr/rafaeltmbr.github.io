@@ -2,10 +2,6 @@
     background-color: rgb(88, 0, 0);
 }
 
-.red .menu-button svg {
-    fill: #fff;
-}
-
 .red .menu-content {
     background: rgb(51, 0, 0);
     box-shadow: 0 0 3px rgb(51, 0, 0);
@@ -64,4 +60,12 @@
 
 .red .content-area a[href^="http"]:visited {
     color: rgb(139, 36, 208);
+}
+
+.red .menu-button .menu-icon-svg{
+    fill: rgb(188, 153, 153);
+}
+
+.red .menu-button:hover .menu-icon-svg, .red .menu-high-brightness .menu-icon-svg {
+    fill: rgb(255, 255, 255);
 }

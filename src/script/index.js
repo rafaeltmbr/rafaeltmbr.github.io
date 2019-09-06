@@ -3,7 +3,7 @@ function switchMenu({target}, targetClass) {
     if (switchNode) {
         const currentDisplay = window.getComputedStyle(switchNode).display;
         switchDisplay(switchNode, currentDisplay);
-        switchOpacity(target, currentDisplay);
+        switchBrightness(target, currentDisplay);
     }
 }
 
@@ -22,18 +22,20 @@ function hideMenuContent() {
     document.body.style.overflow = 'auto';
 }
 
-function switchOpacity(target, currentDisplay) {
-    setOpacityDefault();
+function switchBrightness(target, currentDisplay) {
+    setButtonLowBrightness();
     while(target.nodeName.toUpperCase() !== 'BUTTON' && target.parentElement)
         target = target.parentElement;
-    target.className = 'menu-button ' + (currentDisplay === 'block' ? 'menu-low-opacity' : 'menu-high-opacity');
+    target.className = 'menu-button';
+    if (currentDisplay !== 'block')
+        target.className += ' menu-high-brightness';
 }
 
-function setOpacityDefault() {
+function setButtonLowBrightness() {
     const menuButton = document.getElementsByClassName('menu-button');
     if (menuButton) {
         const keys = Object.keys(menuButton);
-        keys.map(k => menuButton[k].className = 'menu-button menu-low-opacity');
+        keys.map(k => menuButton[k].className = 'menu-button');
     }
 }
 
@@ -90,7 +92,7 @@ function changePageContent(contentAddress, backButton = false) {
                 window.history.pushState(contentArea.innerHTML, '', window.location.pathname + '#' + contentAddress);
             setExternalLinkToBlank();
             hideMenuContent();
-            setOpacityDefault();
+            setButtonLowBrightness();
         }
     };
 
@@ -110,8 +112,10 @@ function parseMarkdown(text) {
 }
 
 function checkHideMenuContentEvent({target}) {
-    if (target.tagName.toLowerCase() === 'body') {
+    if (target.tagName.toLowerCase() === 'body'
+    || (typeof target.className === 'string' && target.className.toLowerCase() === 'menu-icons')) {
         hideMenuContent();
+        setButtonLowBrightness();
         return;
     }
     
@@ -122,6 +126,7 @@ function checkHideMenuContentEvent({target}) {
     }
 
     hideMenuContent();
+    setButtonLowBrightness();
 }
 
 function restoreTheme() {

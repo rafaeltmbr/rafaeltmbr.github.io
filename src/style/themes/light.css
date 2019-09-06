@@ -2,10 +2,6 @@
     background-color: rgb(44, 44, 44);
 }
 
-.light .menu-button svg {
-    fill: #fff;
-}
-
 .light .menu-content {
     background: rgb(243, 243, 243);
     box-shadow: 0 0 3px #444;
@@ -64,4 +60,12 @@
 
 .light .content-area a[href^="http"]:visited {
     color: rgb(139, 36, 208);
+}
+
+.light .menu-button .menu-icon-svg{
+    fill: rgb(170, 170, 170);
+}
+
+.light .menu-button:hover .menu-icon-svg, .light .menu-high-brightness .menu-icon-svg {
+    fill: rgb(255, 255, 255);
 }

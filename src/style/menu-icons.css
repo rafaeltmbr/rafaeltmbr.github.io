@@ -30,12 +30,10 @@
 .menu-button {
     width: 40px;
     background: inherit;
-    opacity: 0.8;
 }
 
 .menu-button:hover {
     cursor: pointer;
-    opacity: 1.0;
 }
 
 .menu-button .chip {
@@ -51,12 +49,4 @@
 .menu-button .github-icon {
     width: 40px;
     height: 40px;
-}
-
-.menu-high-opacity {
-    opacity: 1.0;
-}
-
-.menu-low-opacity {
-    opacity: 0.8;
 }

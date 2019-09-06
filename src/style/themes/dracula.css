@@ -2,10 +2,6 @@
     background-color: rgb(52, 55, 70);
 }
 
-.dracula .menu-button svg {
-    fill: rgb(150, 170, 220);
-}
-
 .dracula .menu-content {
     background: rgb(33, 34, 44);
     box-shadow: 0 0 3px rgb(33, 34, 44);
@@ -64,4 +60,12 @@
 
 .dracula .content-area a[href^="http"]:visited {
     color: rgb(175, 9, 190);
+}
+
+.dracula .menu-button .menu-icon-svg{
+    fill: rgb(98, 114, 164);
+}
+
+.dracula .menu-button:hover .menu-icon-svg, .dracula .menu-high-brightness .menu-icon-svg {
+    fill: #fff;
 }

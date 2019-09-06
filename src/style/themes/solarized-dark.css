@@ -2,10 +2,6 @@
     background-color: rgb(0, 56, 71);
 }
 
-.solarized-dark .menu-button svg {
-    fill: #fff;
-}
-
 .solarized-dark .menu-content {
     background: rgb(0, 33, 43);
     box-shadow: 0 0 3px rgb(0, 33, 43);
@@ -64,4 +60,12 @@
 
 .solarized-dark .content-area a[href^="http"]:visited {
     color: rgb(139, 36, 208);
+}
+
+.solarized-dark .menu-button .menu-icon-svg{
+    fill: rgb(153, 175, 181);
+}
+
+.solarized-dark .menu-button:hover .menu-icon-svg, .solarized-dark .menu-high-brightness .menu-icon-svg {
+    fill: rgb(255, 255, 255);
 }

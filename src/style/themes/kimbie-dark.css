@@ -2,10 +2,6 @@
     background-color: rgb(34, 26, 15);
 }
 
-.kimbie-dark .menu-button svg {
-    fill: rgb(190, 157, 119);
-}
-
 .kimbie-dark .menu-content {
     background: rgb(54, 39, 18);
     box-shadow: 0 0 3px rgb(54, 39, 18);
@@ -64,4 +60,12 @@
 
 .kimbie-dark .content-area a[href^="http"]:visited {
     color: rgb(139, 36, 208);
+}
+
+.kimbie-dark .menu-button .menu-icon-svg{
+    fill: rgb(137, 112, 84);
+}
+
+.kimbie-dark .menu-button:hover .menu-icon-svg, .kimbie-dark .menu-high-brightness .menu-icon-svg {
+    fill: rgb(211, 175, 134);
 }
