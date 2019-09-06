@@ -47,7 +47,7 @@
 
 .monokai-dimmed, .monokai-dimmed .content-area, .monokai-dimmed .content-area * {
     background: rgb(30, 30, 30);
-    border-color: rgb(44, 43, 43);
+    border-color: rgb(204, 204, 204, 0.025);
 }
 
 .monokai-dimmed .content-area {

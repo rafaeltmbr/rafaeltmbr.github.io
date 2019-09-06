@@ -47,11 +47,11 @@
 
 .light-blue, .light-blue .content-area, .light-blue .content-area * {
     background: rgb(219, 219, 248);
-    border-color: rgb(193, 193, 214);
+    border-color: rgb(34, 34, 68, 0.04);
 }
 
 .light-blue .content-area {
-    color: #224;
+    color: rgb(34, 34, 68);
 }
 
 .light-blue .content-area a[href^="http"] {

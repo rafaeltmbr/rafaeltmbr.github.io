@@ -47,7 +47,7 @@
 
 .dark, .dark .content-area, .dark .content-area * {
     background: rgb(30, 30, 30);
-    border-color: rgb(44, 43, 43);
+    border-color: rgb(204, 204, 204, 0.025);
 }
 
 .dark .content-area {

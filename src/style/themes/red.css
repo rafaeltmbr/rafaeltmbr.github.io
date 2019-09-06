@@ -47,7 +47,7 @@
 
 .red, .red .content-area, .red .content-area * {
     background: rgb(57, 0, 0);
-    border-color: rgb(80, 7, 7);
+    border-color: rgb(204, 204, 204, 0.025);
 }
 
 .red .content-area {

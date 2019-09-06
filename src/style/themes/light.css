@@ -47,11 +47,11 @@
 
 .light, .light .content-area, .light .content-area * {
     background: #fff;
-    border-color: #ddd;
+    border-color: rgba(51, 51, 51, 0.1);
 }
 
 .light .content-area {
-    color: #333;
+    color: rgb(51, 51, 51);
 }
 
 .light .content-area a[href^="http"] {

@@ -47,7 +47,7 @@
 
 .abyss, .abyss .content-area, .abyss .content-area * {
     background: rgb(0, 12, 24);
-    border-color: rgb(2, 25, 46);
+    border-color: rgb(204, 204, 204, 0.025);
 }
 
 .abyss .content-area {

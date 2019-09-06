@@ -47,7 +47,7 @@
 
 .solarized-dark, .solarized-dark .content-area, .solarized-dark .content-area * {
     background: rgb(0, 43, 54);
-    border-color: rgb(4, 61, 75);
+    border-color: rgb(204, 204, 204, 0.025);
 }
 
 .solarized-dark .content-area {

@@ -47,11 +47,11 @@
 
 .black-and-white, .black-and-white .content-area, .black-and-white .content-area * {
     background: #fff;
-    border-color: #ddd;
+    border-color: rgba(0, 0, 0, 0.07);
 }
 
 .black-and-white .content-area {
-    color: #000;
+    color: rgb(0, 0, 0);
 }
 
 .black-and-white .content-area a[href^="http"] {

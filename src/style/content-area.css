@@ -24,6 +24,7 @@
     padding-bottom: 0.5em;
     border-bottom: 1px solid #ddd;
     font-size: 2.0em;
+    font-weight: 600;
 }
 
 .content-area h2 {
@@ -31,6 +32,7 @@
     padding-bottom: 0.2em;
     font-size: 1.5em;
     border-bottom: 1px solid #ddd;
+    font-weight: 600;
 }
 
 .content-area p {

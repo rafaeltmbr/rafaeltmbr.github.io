@@ -47,7 +47,7 @@
 
 .kimbie-dark, .kimbie-dark .content-area, .kimbie-dark .content-area * {
     background: rgb(44, 33, 18);
-    border-color: rgb(68, 51, 27);
+    border-color: rgb(204, 204, 204, 0.025);
 }
 
 .kimbie-dark .content-area {

@@ -1,13 +1,13 @@
 html, body {
-    font-size: normal;
-    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     background: transparent;
 }
 
 body {
+    font-size: medium;
     margin-left: 60px;
     padding-top: 30px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
 * {
