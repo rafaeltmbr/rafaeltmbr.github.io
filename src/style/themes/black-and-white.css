@@ -2,10 +2,6 @@
     background-color: #111;
 }
 
-.black-and-white .menu-button svg {
-    fill: #fff;
-}
-
 .black-and-white .menu-content {
     background: #fff;
     box-shadow: 0 0 1px #000;
