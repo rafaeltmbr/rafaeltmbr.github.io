@@ -1,9 +1,26 @@
 function switchMenu({target}, targetClass) {
     let switchNode = document.querySelector('.' + targetClass);
-    if (switchNode) {
+
+    if (targetClass === 'home') {
+        loadHomePage();
+    } else if (switchNode) {
         const currentDisplay = window.getComputedStyle(switchNode).display;
         switchDisplay(switchNode, currentDisplay);
         switchBrightness(target, currentDisplay);
+    }
+}
+
+function loadHomePage() {
+    document.body.setAttribute('data-state', 'home');
+    document.querySelector('.content-area').innerHTML = loadHomePage.innerHTML || '';
+    window.location.hash = '';
+    hideMenuContent();
+}
+
+function hideHomePage() {
+    if (document.body.getAttribute('data-state') === 'home') {
+        loadHomePage.innerHTML = document.querySelector('.content-area').innerHTML;
+        document.body.setAttribute('data-state', '');
     }
 }
 
@@ -77,7 +94,8 @@ function switchPage({target: node}, page) {
         'https://raw.githubusercontent.com/rafaeltmbr/rafaeltmbr.github.io/master/content' + page
     );
 
-    changePageContent(url);
+    if (url !== window.location.hash.slice(1))
+        changePageContent(url);
 }
 
 function changePageContent(contentAddress, backButton = false) {
@@ -86,9 +104,16 @@ function changePageContent(contentAddress, backButton = false) {
 
     xhttp.onreadystatechange = function() {
         if (this.readyState == this.DONE && this.status == 200) {
+            hideHomePage();
             contentArea.innerHTML = parseMarkdown(this.responseText);
-            if (!backButton)
-                window.history.pushState(contentArea.innerHTML, '', window.location.pathname + '#' + contentAddress);
+            const newURL = window.location.origin + window.location.pathname + '#' + contentAddress;
+            if (!backButton) {
+                if (window.location.href === window.location.origin + window.location.pathname + '#'
+                || window.location.href === newURL)
+                    window.history.replaceState(contentArea.innerHTML, '', newURL);
+                else 
+                    window.history.pushState(contentArea.innerHTML, '', newURL);
+            }
             setExternalLinkToBlank();
             hideMenuContent();
             setButtonLowBrightness();
@@ -141,19 +166,10 @@ function restoreTheme() {
 function handleHashNavigation(event, backButton = false) {
     if (window.location.hash)
         changePageContent(window.location.hash.slice(1), backButton);
-    else if(backButton) {
-        document.querySelector('.content-area').innerHTML = handleHashNavigation.homepage || '';
-    }
-}
-
-function saveHomepage() {
-    if (!window.location.hash)
-        handleHashNavigation.homepage = document.querySelector('.content-area').innerHTML;
+    else if(backButton)
+        loadHomePage();
 }
 
 window.addEventListener('load', restoreTheme);
-window.addEventListener('load', () => {
-    saveHomepage();
-    handleHashNavigation()
-});
+window.addEventListener('load', handleHashNavigation);
 window.addEventListener('popstate', () => handleHashNavigation(null, true));

@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Road Rage';
-    src: url(./fonts/Road_Rage.otf);
-}
-
-.welcome h1 {
-    font-family: 'Road Rage', fantasy;
-    font-size: 3.0em;
-}

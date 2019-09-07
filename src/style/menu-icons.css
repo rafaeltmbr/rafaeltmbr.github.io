@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    z-index: 1;
 }
 
 .menu-top-container {

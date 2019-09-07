@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./src/style/menu-content.css">
     <link rel="stylesheet" href="./src/style/menu-animation.css">
     <link rel="stylesheet" href="./src/style/content-area.css">
-    <link rel="stylesheet" href="./src/style/welcome.css">
+    <link rel="stylesheet" href="./src/style/homepage.css">
     <link rel="stylesheet" href="./src/style/themes/abyss.css">
     <link rel="stylesheet" href="./src/style/themes/dark.css">
     <link rel="stylesheet" href="./src/style/themes/dracula.css">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./src/style/themes/black-and-white.css">
     <title>Apoio Microcontroladores</title>
 </head>
-<body class="light" onclick="checkHideMenuContentEvent(event)">
+<body class="light" onclick="checkHideMenuContentEvent(event)" data-state="home">
     <div class="menu-icons">
         <div class="menu-top-container">
             <button class="menu-button menu-low-opacity" onclick="switchMenu(event, 'home')">
@@ -263,8 +263,8 @@
     </div>
 
     <div class="content-area" onclick="checkHideMenuContentEvent(event)">
-        <div class="welcome">
-            <h1>microcontroladores</h1>
+        <div class="home-content">
+            <h1>Microcontroladores</h1>
         </div>
     </div>
     
