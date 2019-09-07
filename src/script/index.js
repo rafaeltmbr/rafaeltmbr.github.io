@@ -10,12 +10,13 @@ function switchMenu({target}, targetClass) {
     }
 }
 
-function loadHomePage() {
+function loadHomePage(backToHome = false) {
     if (document.body.getAttribute('data-state') !== 'home') {
         document.body.setAttribute('data-state', 'home');
         document.querySelector('.content-area').innerHTML = loadHomePage.innerHTML || '';
     }
-    window.location.hash = '';
+    if (!backToHome)
+        window.history.pushState('', 'home', formatNewURL(''));
     hideMenuContent();
 }
 
@@ -109,13 +110,8 @@ function changePageContent(contentAddress, backButton = false) {
             hideHomePage();
             contentArea.innerHTML = parseMarkdown(this.responseText);
             const newURL = formatNewURL(contentAddress);
-            if (!backButton) {
-                if (window.location.href.indexOf('#') === window.location.href.length - 1
-                || window.location.href === newURL)
-                    window.history.replaceState(contentArea.innerHTML, '', newURL);
-                else 
-                    window.history.pushState(contentArea.innerHTML, '', newURL);
-            }
+            if (!backButton)
+                changeNavigationHistory(contentArea.innerHTML, newURL);
             setExternalLinkToBlank();
             hideMenuContent();
             setButtonLowBrightness();
@@ -134,6 +130,14 @@ function formatNewURL(contentAddress) {
     newURL += '#' + contentAddress;
 
     return newURL;
+}
+
+function changeNavigationHistory(data, url) {
+    const href = window.location.href;
+    if (href.indexOf('#') === href.length - 1 || href === url)
+        window.history.replaceState(data, '', url);
+    else 
+        window.history.pushState(data, '', url);
 }
 
 function setExternalLinkToBlank() {
@@ -179,7 +183,7 @@ function handleHashNavigation(event, backButton = false) {
     if (window.location.hash)
         changePageContent(window.location.hash.slice(1), backButton);
     else if(backButton)
-        loadHomePage();
+        loadHomePage(backButton);
 }
 
 window.addEventListener('load', restoreTheme);
