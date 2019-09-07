@@ -4,7 +4,7 @@
 }
 
 body[data-state="home"] {
-    background-image: url('../images/umberto-jXd2FSvcRr8-unsplash.jpg');
+    background-image: url('../images/umberto-jXd2FSvcRr8-unsplash_low_low.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@ body[data-state="home"] .content-area h1 {
     font-family: 'Home Title';
     letter-spacing: 0.1em;
     transform: scale(1, 1.5);
-    background: rgb(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     padding: 0.1em 0;
     text-align: center;
 }
