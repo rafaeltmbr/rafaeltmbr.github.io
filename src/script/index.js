@@ -108,9 +108,9 @@ function changePageContent(contentAddress, backButton = false) {
         if (this.readyState == this.DONE && this.status == 200) {
             hideHomePage();
             contentArea.innerHTML = parseMarkdown(this.responseText);
-            const newURL = window.location.origin + window.location.pathname + '#' + contentAddress;
+            const newURL = formatNewURL(contentAddress);
             if (!backButton) {
-                if (window.location.href === window.location.origin + window.location.pathname + '#'
+                if (window.location.href.indexOf('#') === window.location.href.length - 1
                 || window.location.href === newURL)
                     window.history.replaceState(contentArea.innerHTML, '', newURL);
                 else 
@@ -124,6 +124,16 @@ function changePageContent(contentAddress, backButton = false) {
 
     xhttp.open("GET", contentAddress, true);
     xhttp.send();
+}
+
+function formatNewURL(contentAddress) {
+    let newURL = window.location.href;
+    const hashIndex = newURL.indexOf('#');
+    if (hashIndex >= 0)
+        newURL = newURL.slice(0, hashIndex);
+    newURL += '#' + contentAddress;
+
+    return newURL;
 }
 
 function setExternalLinkToBlank() {
