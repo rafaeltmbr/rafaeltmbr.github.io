@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Home Title';
+    src: url('./fonts/LCDWinTT/LCD-BOLD.TTF');
+}
+
+body[data-state="home"] {
+    background-image: url('../images/umberto-jXd2FSvcRr8-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+body[data-state="home"] .content-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: none;
+}
+
+body[data-state="home"] .content-area, body[data-state="home"] .content-area > * {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+body[data-state="home"] .content-area h1 {
+    color: white;
+    font-size: 7vw;
+    font-family: 'Home Title';
+    letter-spacing: 0.1em;
+    transform: scale(1, 1.5);
+    background: rgb(0, 0, 0, 0.7);
+    padding: 0.1em 0;
+    text-align: center;
+}
