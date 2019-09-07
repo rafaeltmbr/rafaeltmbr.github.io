@@ -11,8 +11,10 @@ function switchMenu({target}, targetClass) {
 }
 
 function loadHomePage() {
-    document.body.setAttribute('data-state', 'home');
-    document.querySelector('.content-area').innerHTML = loadHomePage.innerHTML || '';
+    if (document.body.getAttribute('data-state') !== 'home') {
+        document.body.setAttribute('data-state', 'home');
+        document.querySelector('.content-area').innerHTML = loadHomePage.innerHTML || '';
+    }
     window.location.hash = '';
     hideMenuContent();
 }
