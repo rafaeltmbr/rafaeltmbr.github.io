@@ -66,6 +66,10 @@
     fill: rgb(98, 114, 164);
 }
 
+.dracula .menu-high-brightness .menu-icon-svg {
+    fill: #fff;
+}
+
 @media (hover: hover) {
     .dracula .menu-button:hover .menu-icon-svg, .dracula .menu-high-brightness .menu-icon-svg {
         fill: #fff;
