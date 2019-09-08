@@ -3,6 +3,7 @@ function switchMenu({target}, targetClass) {
 
     if (targetClass === 'home') {
         loadHomePage();
+        switchBrightness(target, '');
     } else if (switchNode) {
         const currentDisplay = window.getComputedStyle(switchNode).display;
         switchDisplay(switchNode, currentDisplay);
@@ -18,6 +19,7 @@ function loadHomePage(backToHome = false) {
     if (!backToHome)
         window.history.pushState('', 'home', formatNewURL(''));
     hideMenuContent();
+    document.getElementById('home-button').className = 'menu-button menu-high-brightness';
 }
 
 function hideHomePage() {
@@ -152,21 +154,18 @@ function parseMarkdown(text) {
 }
 
 function checkHideMenuContentEvent({target}) {
-    if (target.tagName.toLowerCase() === 'body'
-    || (typeof target.className === 'string' && target.className.toLowerCase() === 'menu-icons')) {
-        hideMenuContent();
-        setButtonLowBrightness();
-        return;
+    if (target.tagName.toLowerCase() !== 'body'
+    && (typeof target.className !== 'string' || target.className.toLowerCase() !== 'menu-icons')) {
+        while (typeof target.className !== 'string' || target.className.indexOf('content-area') < 0) {
+            target = target.parentElement;
+            if (!target)
+                return;
+        }
     }
-    
-    while (typeof target.className !== 'string' || target.className.indexOf('content-area') < 0) {
-        target = target.parentElement;
-        if (!target)
-            return;
-    }
-
     hideMenuContent();
     setButtonLowBrightness();
+    if (document.body.getAttribute('data-state') === 'home')
+        document.getElementById('home-button').className = 'menu-button menu-high-brightness';
 }
 
 function restoreTheme() {

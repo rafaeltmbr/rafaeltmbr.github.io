@@ -8,10 +8,6 @@ body[data-state="home"] {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0;
-    position: fixed;
-    z-index: -1;
-    width: calc(100% - 60px);
 }
 
 body[data-state="home"] .content-area, body[data-state="home"] .content-area > * {
