@@ -66,6 +66,12 @@
     fill: rgb(170, 170, 170);
 }
 
-.black-and-white .menu-button:hover .menu-icon-svg, .black-and-white .menu-high-brightness .menu-icon-svg {
+.black-and-white .menu-high-brightness .menu-icon-svg {
     fill: rgb(255, 255, 255);
+}
+
+@media (hover: hover) {
+    .black-and-white .menu-button:hover .menu-icon-svg {
+        fill: rgb(255, 255, 255);
+    }
 }

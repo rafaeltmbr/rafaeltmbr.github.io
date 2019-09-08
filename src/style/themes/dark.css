@@ -66,6 +66,12 @@
     fill: #aaa;
 }
 
-.dark .menu-button:hover .menu-icon-svg, .dark .menu-high-brightness .menu-icon-svg {
+.dark .menu-high-brightness .menu-icon-svg {
     fill: #fff;
+}
+
+@media (hover: hover) {
+    .dark .menu-button:hover .menu-icon-svg {
+        fill: #fff;
+    }
 }

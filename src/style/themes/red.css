@@ -66,6 +66,12 @@
     fill: rgb(188, 153, 153);
 }
 
-.red .menu-button:hover .menu-icon-svg, .red .menu-high-brightness .menu-icon-svg {
+.red .menu-high-brightness .menu-icon-svg {
     fill: rgb(255, 255, 255);
+}
+
+@media (hover: hover) {
+    .red .menu-button:hover .menu-icon-svg {
+        fill: rgb(255, 255, 255);
+    }
 }

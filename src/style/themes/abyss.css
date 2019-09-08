@@ -66,6 +66,12 @@
     fill: #aaa;
 }
 
-.abyss .menu-button:hover .menu-icon-svg, .abyss .menu-high-brightness .menu-icon-svg {
+.abyss .menu-high-brightness .menu-icon-svg {
     fill: #fff;
+}
+
+@media (hover: hover) {
+    .abyss .menu-button:hover .menu-icon-svg {
+        fill: #fff;
+    }
 }

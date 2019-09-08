@@ -66,6 +66,12 @@
     fill: rgb(137, 112, 84);
 }
 
-.kimbie-dark .menu-button:hover .menu-icon-svg, .kimbie-dark .menu-high-brightness .menu-icon-svg {
+.kimbie-dark .menu-high-brightness .menu-icon-svg {
     fill: rgb(211, 175, 134);
+}
+
+@media (hover: hover) {
+    .kimbie-dark .menu-button:hover .menu-icon-svg {
+        fill: rgb(211, 175, 134);
+    }
 }

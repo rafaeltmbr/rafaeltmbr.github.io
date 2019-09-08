@@ -66,6 +66,12 @@
     fill: rgb(174, 174, 174);
 }
 
-.monokai-dimmed .menu-button:hover .menu-icon-svg, .monokai-dimmed .menu-high-brightness .menu-icon-svg {
+.monokai-dimmed .menu-high-brightness .menu-icon-svg {
     fill: rgb(255, 255, 255);
+}
+
+@media (hover: hover) {
+    .monokai-dimmed .menu-button:hover .menu-icon-svg {
+        fill: rgb(255, 255, 255);
+    }
 }

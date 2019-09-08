@@ -66,6 +66,12 @@
     fill: rgb(140, 131, 100);
 }
 
-.solarized-light .menu-button:hover .menu-icon-svg, .solarized-light .menu-high-brightness .menu-icon-svg {
+.solarized-light .menu-high-brightness .menu-icon-svg {
     fill: rgb(88, 76, 39);
+}
+
+@media (hover: hover) {
+    .solarized-light .menu-button:hover .menu-icon-svg {
+        fill: rgb(88, 76, 39);
+    }
 }

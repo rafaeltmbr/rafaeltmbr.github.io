@@ -66,6 +66,12 @@
     fill: rgb(153, 175, 181);
 }
 
-.solarized-dark .menu-button:hover .menu-icon-svg, .solarized-dark .menu-high-brightness .menu-icon-svg {
+.solarized-dark .menu-high-brightness .menu-icon-svg {
     fill: rgb(255, 255, 255);
+}
+
+@media (hover: hover) {
+    .solarized-dark .menu-button:hover .menu-icon-svg {
+        fill: rgb(255, 255, 255);
+    }
 }
