@@ -30,7 +30,7 @@ body[data-state="home"] .content-area h1 {
     font-family: 'Home Title';
     letter-spacing: 0.1em;
     transform: scale(1, 1.5);
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85);
     padding: 0.1em 0;
     text-align: center;
 }
