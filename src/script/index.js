@@ -195,7 +195,7 @@ function handleMenuHeightResize() {
     const menuHeight = parseInt(window.getComputedStyle(document.querySelector('.menu-icons')).height);
     const paddingBottom = menuHeight - viewportHeight + 'px';
     document.querySelector('.menu-icons').style.setProperty('padding-bottom', paddingBottom);
-    document.querySelector('.menu-content').style.setProperty('padding-bottom', paddingBottom);
+    //document.querySelector('.menu-content').style.setProperty('padding-bottom', paddingBottom);
 }
 
 window.addEventListener('load', restoreTheme);

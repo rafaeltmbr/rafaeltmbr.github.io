@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 60px;
-    height: 120vh;
+    height: 100%;
     width: 300px;
     max-width: calc(100% - 60px);
     z-index: 3;
@@ -24,7 +24,7 @@
 .menu-category-list {
     list-style-type: none;
     overflow: auto;
-    height: calc(100vh - 30px);
+    height: calc(100% - 30px);
 }
 
 .menu-category-list > li {
