@@ -190,6 +190,15 @@ function handleHashNavigation(event, backButton = false) {
         loadHomePage(backButton);
 }
 
+function handleMenuIconsResize() {
+    const viewportHeight = document.documentElement.clientHeight;
+    const menuHeight = parseInt(window.getComputedStyle(document.querySelector('.menu-icons')).height);
+    const marginBottom = menuHeight - viewportHeight + 10 + 'px';
+    document.querySelector('.menu-bottom-container').style.setProperty('margin-bottom', marginBottom);
+}
+
 window.addEventListener('load', restoreTheme);
 window.addEventListener('load', handleHashNavigation);
+window.addEventListener('load', handleMenuIconsResize);
+window.addEventListener('resize', handleMenuIconsResize);
 window.addEventListener('popstate', () => handleHashNavigation(null, true));
