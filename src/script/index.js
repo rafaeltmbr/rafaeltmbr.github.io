@@ -193,8 +193,8 @@ function handleHashNavigation(event, backButton = false) {
 function handleMenuIconsResize() {
     const viewportHeight = window.innerHeight;
     const menuHeight = parseInt(window.getComputedStyle(document.querySelector('.menu-icons')).height);
-    const marginBottom = menuHeight - viewportHeight + 'px';
-    document.querySelector('.menu-bottom-container').style.setProperty('margin-bottom', marginBottom);
+    const paddingBottom = menuHeight - viewportHeight + 'px';
+    document.querySelector('.menu-icons').style.setProperty('padding-bottom', paddingBottom);
 }
 
 window.addEventListener('load', restoreTheme);
