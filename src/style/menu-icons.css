@@ -14,11 +14,12 @@
 
 .background-menu-icons {
     position: fixed;
-    top: 0;
+    top: 100vh;
     left: 0;
-    height: 200vh;
+    height: 50vh;
     width: 60px;
-    z-index: 2;
+    z-index: 3;
+    background: red;
 }
 
 .menu-top-container {
