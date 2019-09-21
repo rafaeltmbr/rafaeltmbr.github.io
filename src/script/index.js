@@ -191,9 +191,9 @@ function handleHashNavigation(event, backButton = false) {
 }
 
 function handleMenuIconsResize() {
-    const viewportHeight = document.documentElement.clientHeight;
+    const viewportHeight = window.innerHeight;
     const menuHeight = parseInt(window.getComputedStyle(document.querySelector('.menu-icons')).height);
-    const marginBottom = menuHeight - viewportHeight + 10 + 'px';
+    const marginBottom = menuHeight - viewportHeight + 'px';
     document.querySelector('.menu-bottom-container').style.setProperty('margin-bottom', marginBottom);
 }
 
