@@ -12,6 +12,15 @@
     z-index: 3;
 }
 
+.background-menu-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2vh;
+    width: 60px;
+    z-index: 1;
+}
+
 .menu-top-container {
     display: flex;
     flex-direction: column;
