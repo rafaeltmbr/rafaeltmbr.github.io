@@ -190,15 +190,16 @@ function handleHashNavigation(event, backButton = false) {
         loadHomePage(backButton);
 }
 
-function handleMenuIconsResize() {
+function handleMenuHeightResize() {
     const viewportHeight = window.innerHeight;
     const menuHeight = parseInt(window.getComputedStyle(document.querySelector('.menu-icons')).height);
     const paddingBottom = menuHeight - viewportHeight + 'px';
     document.querySelector('.menu-icons').style.setProperty('padding-bottom', paddingBottom);
+    document.querySelector('.menu-content').style.setProperty('padding-bottom', paddingBottom);
 }
 
 window.addEventListener('load', restoreTheme);
 window.addEventListener('load', handleHashNavigation);
-window.addEventListener('load', handleMenuIconsResize);
-window.addEventListener('resize', handleMenuIconsResize);
+window.addEventListener('load', handleMenuHeightResize);
+window.addEventListener('resize', handleMenuHeightResize);
 window.addEventListener('popstate', () => handleHashNavigation(null, true));
