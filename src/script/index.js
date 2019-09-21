@@ -202,5 +202,5 @@ window.addEventListener('load', restoreTheme);
 window.addEventListener('load', handleHashNavigation);
 window.addEventListener('load', handleMenuHeightResize);
 window.addEventListener('resize', handleMenuHeightResize);
-window.addEventListener('resize', () => document.body.height = window.innerHeight + 'px');
+window.addEventListener('resize', () => document.body.style.height = window.innerHeight + 'px');
 window.addEventListener('popstate', () => handleHashNavigation(null, true));
