@@ -33,6 +33,8 @@ function switchDisplay(node, currentDisplay) {
     hideMenuContent();
     node.style.display = (currentDisplay === 'block' ? 'none' : 'block');
     document.body.style.overflow = (currentDisplay === 'block' ? 'auto' : 'hidden');
+    document.querySelector('.background-mask').setAttribute('data-display',
+        (currentDisplay === 'block' ? 'hide' : 'show')) ;
 }
 
 function hideMenuContent() {
@@ -42,6 +44,7 @@ function hideMenuContent() {
         keys.map(k => menuContent[k].style.display = 'none');
     }
     document.body.style.overflow = 'auto';
+    document.querySelector('.background-mask').setAttribute('data-display', 'hide');
 }
 
 function switchBrightness(target, currentDisplay) {
@@ -155,7 +158,9 @@ function parseMarkdown(text) {
 
 function checkHideMenuContentEvent({target}) {
     if (target.tagName.toLowerCase() !== 'body'
-    && (typeof target.className !== 'string' || target.className.toLowerCase() !== 'menu-icons')) {
+    && (typeof target.className !== 'string'
+        || (target.className.toLowerCase() !== 'menu-icons'
+        && target.className.toLowerCase() !== 'background-mask'))) {
         while (typeof target.className !== 'string' || target.className.indexOf('content-area') < 0) {
             target = target.parentElement;
             if (!target)
