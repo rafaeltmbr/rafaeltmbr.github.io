@@ -74,6 +74,7 @@ function setListHeight(selector) {
 function setMenuCategoryListHeight() {
     setListHeight('.programming .menu-category-list');
     setListHeight('.microcontrollers .menu-category-list');
+    setListHeight('.settings .menu-category-list');
 }
 
 window.addEventListener('resize', setMenuCategoryListHeight);

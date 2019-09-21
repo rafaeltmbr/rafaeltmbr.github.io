@@ -24,7 +24,6 @@
 .menu-category-list {
     list-style-type: none;
     overflow: auto;
-    height: calc(100% - 30px);
 }
 
 .menu-category-list > li {
