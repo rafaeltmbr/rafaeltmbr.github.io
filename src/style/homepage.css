@@ -8,6 +8,7 @@ body[data-state="home"] {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 0;
 }
 
 body[data-state="home"] .content-area, body[data-state="home"] .content-area > * {
@@ -22,6 +23,7 @@ body[data-state="home"] .content-area {
     justify-content: center;
     height: 100%;
     max-width: none;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 body[data-state="home"] .content-area h1 {
@@ -32,7 +34,7 @@ body[data-state="home"] .content-area h1 {
     transform: scale(1, 1.5);
     text-align: center;
     user-select: none;
-    z-index: 2;
+    z-index: 1;
 }
 
 .background-mask {
@@ -46,6 +48,6 @@ body[data-state="home"] .content-area h1 {
     display: none;
 }
 
-body[data-state="home"] .background-mask, .background-mask[data-display="show"] {
+.background-mask[data-display="show"] {
     display: block;
 }
