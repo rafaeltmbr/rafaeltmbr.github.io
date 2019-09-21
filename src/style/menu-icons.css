@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 240px;
+    height: 180px;
 }
 
 .menu-bottom-container {
@@ -54,5 +54,5 @@
 }
 
 .menu-button[disabled="disabled"] {
-    pointer-events: none;
+    display: none;
 }
