@@ -35,8 +35,8 @@ function switchDisplay(node, currentDisplay) {
     if (style.opacity === '0') {
         node.style.display = 'block';
         const tl = new TimelineMax();
-        tl.to(node, 0.5, {left: '60px'}).
-        to(node, 0.5, {opacity: '1'}, '-= 0.25');
+        tl.to(node, 0.5, {left: '60px'})
+        .to(node, 0.5, {opacity: '1'}, '-= 0.25');
     }
     document.body.style.overflow = (currentDisplay === 'block' ? 'auto' : 'hidden');
     document.querySelector('.background-mask').setAttribute('data-display',
@@ -52,8 +52,9 @@ function hideMenuContent() {
             if (style.opacity !== '0') {
                 const tl = new TimelineMax();
                 const offsetX = -parseInt(style.width) - 60 + 'px';
-                tl.to(menuContent[k], 0.5, {left: offsetX}).
-                to(menuContent[k], 0.5, {opacity: '0'}, '-= 0.25');
+                tl.to(menuContent[k], 0.5, {left: offsetX})
+                .to(menuContent[k], 0.5, {opacity: '0'}, '-= 0.25')
+                .add(() => menuContent[k].style.display = 'none');
             }
         });
     }
