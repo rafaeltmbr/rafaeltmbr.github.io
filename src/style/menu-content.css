@@ -1,11 +1,12 @@
 .menu-content {
     position: fixed;
     top: 0;
-    left: 60px;
+    left: -240px;
     height: 100%;
     width: 300px;
     max-width: calc(100% - 60px);
     z-index: 3;
+    opacity: 0;
 }
 
 .menu-content * {

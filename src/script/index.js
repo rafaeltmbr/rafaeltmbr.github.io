@@ -31,7 +31,13 @@ function hideHomePage() {
 
 function switchDisplay(node, currentDisplay) {
     hideMenuContent();
-    node.style.display = (currentDisplay === 'block' ? 'none' : 'block');
+    const style = window.getComputedStyle(node);
+    if (style.opacity === '0') {
+        node.style.display = 'block';
+        const tl = new TimelineMax();
+        tl.to(node, 0.5, {left: '60px'}).
+        to(node, 0.5, {opacity: '1'}, '-= 0.25');
+    }
     document.body.style.overflow = (currentDisplay === 'block' ? 'auto' : 'hidden');
     document.querySelector('.background-mask').setAttribute('data-display',
         (currentDisplay === 'block' ? 'hide' : 'show')) ;
@@ -41,7 +47,15 @@ function hideMenuContent() {
     const menuContent = document.getElementsByClassName('menu-content');
     if (menuContent) {
         const keys = Object.keys(menuContent);
-        keys.map(k => menuContent[k].style.display = 'none');
+        keys.map(k => {
+            const style = window.getComputedStyle(menuContent[k]);
+            if (style.opacity !== '0') {
+                const tl = new TimelineMax();
+                const offsetX = -parseInt(style.width) - 60 + 'px';
+                tl.to(menuContent[k], 0.5, {left: offsetX}).
+                to(menuContent[k], 0.5, {opacity: '0'}, '-= 0.25');
+            }
+        });
     }
     document.body.style.overflow = 'auto';
     document.querySelector('.background-mask').setAttribute('data-display', 'hide');
