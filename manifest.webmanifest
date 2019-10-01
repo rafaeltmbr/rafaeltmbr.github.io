@@ -8,7 +8,7 @@
     "theme_color" : "#333333",
     "description" : "Site de apoio ao estudo de microcontrolares e linguagem de programação. Conheça mais sobre Arduino, PIC16 e PIC18.",
     "orientation" : "any",
-    "background_color" : "#666666",
+    "background_color" : "#b0b0b0",
     "related_applications" : "",
     "prefer_related_applications" : "false",
     "generated" : "true",
