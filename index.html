@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site de apoio ao estudo de microcontrolares e linguagem de programação. Conheça mais sobre Arduino, PIC16 e PIC18.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='manifest' href='./manifest.webmanifest'>
     <link rel="icon" href="./src/icons/Elizabeth-Arostegui-chip.ico" data-author="Elizabeth Arostegui" data-author-page="https://www.iconfinder.com/coloripop" type="image/ico">
     <link rel="stylesheet" href="./src/style/reset.css">
     <link rel="stylesheet" href="./src/style/index.css">
@@ -269,6 +270,27 @@
 
     <div class="background-mask" onclick="checkHideMenuContentEvent(event)"></div>
 
+    <script>
+        // This is the "Offline page" service worker
+
+        // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+        // Check compatibility for the browser we're running this in
+        if ("serviceWorker" in navigator) {
+            if (navigator.serviceWorker.controller) {
+            console.log("[PWA Builder] active service worker found, no need to register");
+            } else {
+            // Register the service worker
+            navigator.serviceWorker
+                .register("pwabuilder-sw.js", {
+                scope: "./"
+                })
+                .then(function (reg) {
+                console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+                });
+            }
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>

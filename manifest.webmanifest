@@ -1,0 +1,21 @@
+{"dir" : "ltr",
+    "lang" : "pt-br",
+    "name" : "Microcontroladores",
+    "scope" : "/",
+    "display" : "browser",
+    "start_url" : "https://rafaeltmbr.github.io/",
+    "short_name" : "Microcontroladores",
+    "theme_color" : "transparent",
+    "description" : "Site de apoio ao estudo de microcontrolares e linguagem de programação. Conheça mais sobre Arduino, PIC16 e PIC18.",
+    "orientation" : "any",
+    "background_color" : "transparent",
+    "related_applications" : "",
+    "prefer_related_applications" : "false",
+    "generated" : "true",
+    "icons" : [
+        {
+            "src": "https://www.google.com/src/icons/Elizabeth-Arostegui-chip.ico",
+            "sizes": "32x32"
+        }
+    ]
+}
