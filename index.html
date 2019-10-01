@@ -270,31 +270,11 @@
 
     <div class="background-mask" onclick="checkHideMenuContentEvent(event)"></div>
 
-    <script>
-        // This is the "Offline page" service worker
-
-        // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
-
-        // Check compatibility for the browser we're running this in
-        if ("serviceWorker" in navigator) {
-            if (navigator.serviceWorker.controller) {
-            console.log("[PWA Builder] active service worker found, no need to register");
-            } else {
-            // Register the service worker
-            navigator.serviceWorker
-                .register("pwabuilder-sw.js", {
-                scope: "./"
-                })
-                .then(function (reg) {
-                console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-                });
-            }
-        }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
     <script src="./src/script/index.js"></script>
     <script src="./src/script/menu-animation.js"></script>
+    <script src="./src/script/index-sw.js"></script>
 </body>
 </html>
