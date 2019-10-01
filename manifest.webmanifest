@@ -5,7 +5,7 @@
     "display" : "fullscreen",
     "start_url" : "https://rafaeltmbr.github.io/",
     "short_name" : "Microcontroladores",
-    "theme_color" : "transparent",
+    "theme_color" : "#333333",
     "description" : "Site de apoio ao estudo de microcontrolares e linguagem de programação. Conheça mais sobre Arduino, PIC16 e PIC18.",
     "orientation" : "any",
     "background_color" : "transparent",
@@ -14,12 +14,16 @@
     "generated" : "true",
     "icons" : [
         {
-            "src": "https://www.google.com/src/icons/Elizabeth-Arostegui-chip.ico",
+            "src": "https://rafaeltmbr.github.io/src/icons/iconfinder_Technology_Mix_-_Final-26_998670-32px.png",
             "sizes": "32x32"
         },
         {
-            "src": "https://www.google.com/src/icons/iconfinder_Technology_Mix_-_Final-26_998670.png",
-            "sizes": "192x192"
+            "src": "https://rafaeltmbr.github.io/src/icons/iconfinder_Technology_Mix_-_Final-26_998670-256px.png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "https://rafaeltmbr.github.io/src/icons/iconfinder_Technology_Mix_-_Final-26_998670-512px.png",
+            "sizes": "512x512"
         }
     ]
 }
